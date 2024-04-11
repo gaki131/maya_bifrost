@@ -29,6 +29,11 @@
                                             "metaValue": "2"
                                         },
                                         {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-1188.37 -281.136"
+                                        },
+                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
@@ -56,11 +61,6 @@
                                                     "metaName": "use_nlerp_if_closer"
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "-1188.37 -281.136"
                                         }
                                     ]
                                 }
@@ -122,11 +122,6 @@
                     "metaValue": "BifrostGraph,Print,print"
                 },
                 {
-                    "metaName": "ViewportRect",
-                    "metaType": "string",
-                    "metaValue": "-1348.71 -1134.17 2684.21 2088.22"
-                },
-                {
                     "metaName": "UILayout",
                     "metaType": "string",
                     "metaValue": "{\n    \"NodeLayout\": {\n        \"hideUndeclaredPorts\": false,\n        \"items\": [\n            {\n                \"port\": \"source\"\n            },\n            {\n                \"port\": \"target\"\n            },\n            {\n                \"port\": \"blend\"\n            },\n            {\n                \"port\": \"apply_scale\"\n            },\n            {\n                \"port\": \"apply_orientation\"\n            },\n            {\n                \"port\": \"apply_position\"\n            },\n            {\n                \"expanded\": false,\n                \"group\": \"Advanced\",\n                \"items\": [\n                    {\n                        \"port\": \"always_use_shorter_arc\"\n                    },\n                    {\n                        \"port\": \"use_nlerp_if_closer\"\n                    }\n                ]\n            }\n        ]\n    }\n}\n"
@@ -142,6 +137,11 @@
                     ]
                 },
                 {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-594 -342 1189 684"
+                },
+                {
                     "metaName": "DisplayMode",
                     "metaType": "string",
                     "metaValue": "2"
@@ -149,7 +149,7 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "4046.16 346.229"
+                    "metaValue": "-315.356 -307.393"
                 }
             ],
             "terminalStates": [
@@ -170,7 +170,7 @@
                 {
                     "portName": "source",
                     "portDirection": "input",
-                    "portType": "Math::float4x4",
+                    "portDefaultType": "Math::float4x4",
                     "portDefault": {
                         "c0": {
                             "x": "0f",
@@ -201,7 +201,7 @@
                 {
                     "portName": "target",
                     "portDirection": "input",
-                    "portType": "Math::float4x4",
+                    "portDefaultType": "Math::float4x4",
                     "portDefault": {
                         "c0": {
                             "x": "0f",
@@ -232,7 +232,7 @@
                 {
                     "portName": "blend",
                     "portDirection": "input",
-                    "portType": "float",
+                    "portDefaultType": "float",
                     "portDefault": "0.5f",
                     "metadata": [
                         {
@@ -264,8 +264,7 @@
                 },
                 {
                     "portName": "blended_transform",
-                    "portDirection": "output",
-                    "portType": "Math::float4x4"
+                    "portDirection": "output"
                 },
                 {
                     "portName": "apply_position",
