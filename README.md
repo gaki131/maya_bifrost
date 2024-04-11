@@ -29,11 +29,11 @@ This compound blends between two given transforms.
 ### Namespace : gkRig::Motion
 ### Inputs
 
- - **source** (type: Math::float4x4)<br>
+ - **source** (type: Math::float4x4 | array\<Math::float4x4\>)<br>
    Transform to begin with.
- - **target** (type: Math::float4x4)<br>
+ - **target** (type: Math::float4x4 | array\<Math::float4x4\>)<br>
    Blend target transform.
- - **blend** (type: float)<br>
+ - **blend** (type: float | array\<float\>)<br>
    Blend value(0.0 - 1.0) between source and target.
  - **apply_scale** (type: bool)<br>
    If True, scale will be blended.
