@@ -15,7 +15,7 @@ This compound interpolates between the given control points(cvs) by a quadratic 
 
   - **cvs** (type: array\<Math::float3\>)<br>
     Control vertices used for interpolating by quadratic B-Spline. You need to have minimum 4 cvs.
-  - **parameters** (type: float | array\<float\>)<br>
+  - **parameter** (type: float | array\<float\>)<br>
     0.0 to 1.0 value which determines the parametric position on the B-Spline curve.
   
 ### Outputs
@@ -51,6 +51,13 @@ Visualizes the position and each axes of the given transform(s).
 ### Namespace : gkRig::Display
 ### Inputs
  - **transform** (type: Math::float4x4 | array\<Math::float4x4\>)<br>
+   Input transform(s) to visualize.
+ - **arrow_size** (type: float)<br>
+   Size of the arrows.
+ - **arrowhead_size_ratio** (type: float\>)<br>
+   Size of the arrow head relative to the arrow size.
+ - **tint** (type: float)<br?
+   lightness of the arrows towards white.
  
 
 
