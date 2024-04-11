@@ -19,9 +19,9 @@ This compound interpolates between the given control points(cvs) by a quadratic 
     0.0 to 1.0 value which determines the parametric position on the B-Spline curve.
   
 ### Outputs
-  - **position** (type: Math::float3 | array\<Math::float3\>)<br>
+ - **position** (type: Math::float3 | array\<Math::float3\>)<br>
     Interpolated position on the B-Spline curve on the given parameter.
-  - **derivative** (type: Math::float3 | array\<Math::float3\>)<br>
+ - **derivative** (type: Math::float3 | array\<Math::float3\>)<br>
     Derivative or tangent on the given parameter.
 
 ## transform_blend
@@ -50,5 +50,7 @@ This compound blends between two given transforms.
 Visualizes the position and each axes of the given transform(s).
 ### Namespace : gkRig::Display
 ### Inputs
+ - **transform** (type: Math::float4x4 | array\<Math::float4x4\>)<br>
+ 
 
 
