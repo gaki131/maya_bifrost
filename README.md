@@ -54,7 +54,7 @@ Visualizes the position and each axes of the given transform(s).
    Input transform(s) to visualize.
  - **arrow_size** (type: float)<br>
    Size of the arrows.
- - **arrowhead_size_ratio** (type: float\>)<br>
+ - **arrowhead_size_ratio** (type: float)<br>
    Size of the arrow head relative to the arrow size.
  - **tint** (type: float)<br>
    lightness of the arrows towards white.
