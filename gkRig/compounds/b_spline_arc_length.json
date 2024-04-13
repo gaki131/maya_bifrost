@@ -2211,7 +2211,7 @@
                                                             "metaName": "half_length_deltas"
                                                         },
                                                         {
-                                                            "metaName": "port"
+                                                            "metaName": "current_length"
                                                         }
                                                     ]
                                                 },
@@ -2444,8 +2444,8 @@
                             "target": "current_length.first.value1"
                         },
                         {
-                            "source": ".port",
-                            "target": "current_length.first.port"
+                            "source": ".current_length",
+                            "target": "current_length.first.current_length"
                         },
                         {
                             "source": "current_length.output",
