@@ -42,6 +42,22 @@ This compound calcultes total arc length of quadratic B-Spline curve that would 
   - **sample_count** (type: long)<br>
     Number of the length and parameter samples.
 
+## lengths_to_parameters
+This compounds given array of lengths into array of parameters interpolating them from given samples. The input lengths does not have to be sorted.
+### Namepace : gkRig::Motion
+### Inputs
+  - **lengths** (type: array\<double\>)<br>
+    Array of arc length that you want to convert to parameter value.
+  - **sample_lengths** (type: array\<double\>)<br>
+    Sampled arc lengths from the output of b_spline_arc_length or other arc length compounds.
+  - **sample_parameters** (type: array\<double\>)<br>
+    Sampled parameters from the output of b_spline_arc_length or other arc length compounds.
+  - **sample_count** (type: long)<br>
+     Number of the length and parameter samples.
+### Outputs
+  - **parameters** (type: array\<float\>)<br>
+    Array of the parameters that are on the given arc lengths.
+
 ## transform_blend
 This compound blends between two given transforms.
 ### Namespace : gkRig::Motion
