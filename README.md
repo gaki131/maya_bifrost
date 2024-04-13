@@ -34,7 +34,13 @@ This compound calcultes total arc length of quadratic B-Spline curve that would 
     If True, double the samples for higher accuracy.
 ### Outputs
   - **arc_length** (type: double)
+    Total arc length of the B-Spline curve generated from the given control vertices.
   - **sample_lengths** (type: array\<double\>)
+    Sampled arc lengths.
+  - **sample_parameters** (type: array\<bouble\>)
+    Sampled parameters.
+  - **sample_count** (type: long)
+    Number of the length and parameter samples.
 
 ## transform_blend
 This compound blends between two given transforms.
