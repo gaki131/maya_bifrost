@@ -28,18 +28,18 @@ This compound interpolates between the given control points(cvs) by a quadratic 
 This compound calcultes total arc length of quadratic B-Spline curve that would be created from the given control vertices. Also, samples the arc length on multiple parameters so that one can convert values between the length and parameters.
 ### Namespace : gkRig::Motion
 ### Inputs
-  - **cvs** (type: array\<Math::float3\> | array<\Math::double3\>)
+  - **cvs** (type: array\<Math::float3\> | array<\Math::double3\>)<br>
     Control vertices used for creating the quadratic B-Spline of interest. You need to have minimum 4 cvs.
-  - **higher_precision** (bool)
+  - **higher_precision** (bool)<br>
     If True, double the samples for higher accuracy.
 ### Outputs
-  - **arc_length** (type: double)
+  - **arc_length** (type: double)<br>
     Total arc length of the B-Spline curve generated from the given control vertices.
-  - **sample_lengths** (type: array\<double\>)
+  - **sample_lengths** (type: array\<double\>)<br>
     Sampled arc lengths.
-  - **sample_parameters** (type: array\<bouble\>)
+  - **sample_parameters** (type: array\<bouble\>)<br>
     Sampled parameters.
-  - **sample_count** (type: long)
+  - **sample_count** (type: long)<br>
     Number of the length and parameter samples.
 
 ## transform_blend
