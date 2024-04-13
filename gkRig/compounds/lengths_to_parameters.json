@@ -1,0 +1,798 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "gkRig::Motion::lengths_to_parameters",
+            "metadata": [
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "<NATIVE>../icons/LoopIterate.svg"
+                },
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "<NATIVE>../icons/LoopIterate.svg"
+                },
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-449.5 -61"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "lengths"
+                                                },
+                                                {
+                                                    "metaName": "sample_lengths"
+                                                },
+                                                {
+                                                    "metaName": "sample_parameters"
+                                                },
+                                                {
+                                                    "metaName": "sample_count"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "parameters"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "123.697 -49.5005"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-751.278 -446.312 1576.2 918.163"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "5933.14 1242.77"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "lengths",
+                    "portDirection": "input",
+                    "portIterationTarget": "true"
+                },
+                {
+                    "portName": "sample_lengths",
+                    "portDirection": "input"
+                },
+                {
+                    "portName": "sample_parameters",
+                    "portDirection": "input"
+                },
+                {
+                    "portName": "sample_count",
+                    "portDirection": "input",
+                    "portType": "long",
+                    "portDefault": "10"
+                },
+                {
+                    "portName": "parameters",
+                    "portDirection": "output",
+                    "portIterationTarget": "true"
+                }
+            ],
+            "compounds": [
+                {
+                    "name": "length_to_parameter",
+                    "uriImported": "file:///length_to_parameter.json",
+                    "metadata": [
+                        {
+                            "metaName": "icon",
+                            "metaType": "string",
+                            "metaValue": "<NATIVE>../icons/LoopDo_While.svg"
+                        },
+                        {
+                            "metaName": "icon",
+                            "metaType": "string",
+                            "metaValue": "<NATIVE>../icons/LoopDo_While.svg"
+                        },
+                        {
+                            "metaName": "icon",
+                            "metaType": "string",
+                            "metaValue": "<NATIVE>../icons/LoopDo_While.svg"
+                        },
+                        {
+                            "metaName": "icon",
+                            "metaType": "string",
+                            "metaValue": "<NATIVE>../icons/LoopDo_While.svg"
+                        },
+                        {
+                            "metaName": "icon",
+                            "metaType": "string",
+                            "metaValue": "<NATIVE>../icons/LoopDo_While.svg"
+                        },
+                        {
+                            "metaName": "icon",
+                            "metaType": "string",
+                            "metaValue": "<NATIVE>../icons/LoopDo_While.svg"
+                        },
+                        {
+                            "metaName": "io_nodes",
+                            "metadata": [
+                                {
+                                    "metaName": "io_inodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "input",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "-910 -116"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "length"
+                                                        },
+                                                        {
+                                                            "metaName": "sample_lengths"
+                                                        },
+                                                        {
+                                                            "metaName": "sample_parameters"
+                                                        },
+                                                        {
+                                                            "metaName": "sample_count"
+                                                        },
+                                                        {
+                                                            "metaName": "current_index"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "io_onodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "output",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "1702 -228.971"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "looping_condition"
+                                                        },
+                                                        {
+                                                            "metaName": "parameter"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Math,subtract"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Type_Conversion,to_float"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Array,get_from_array"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Math,divide"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Math,add"
+                        },
+                        {
+                            "metaName": "ViewportRect",
+                            "metaType": "string",
+                            "metaValue": "-938.626 -870.369 3133.02 1825.03"
+                        },
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "5103.42 1368.8"
+                        }
+                    ],
+                    "ports": [
+                        {
+                            "portName": "length",
+                            "portDirection": "input"
+                        },
+                        {
+                            "portName": "sample_lengths",
+                            "portDirection": "input"
+                        },
+                        {
+                            "portName": "sample_parameters",
+                            "portDirection": "input"
+                        },
+                        {
+                            "portName": "sample_count",
+                            "portDirection": "input",
+                            "portType": "long",
+                            "portDefault": "10",
+                            "portIterationLimit": "true"
+                        },
+                        {
+                            "portName": "current_index",
+                            "portDirection": "input",
+                            "portType": "long",
+                            "portIterationCounter": "true"
+                        },
+                        {
+                            "portName": "parameter",
+                            "portDirection": "output"
+                        }
+                    ],
+                    "compoundNodes": [
+                        {
+                            "nodeName": "next_index",
+                            "nodeType": "Core::Math::add",
+                            "multiInPortNames": [
+                                "current_index",
+                                "output1"
+                            ],
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-587.143 157.67"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value",
+                            "valueType": "long",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-879.678 220.878"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "if",
+                            "nodeType": "Core::Logic::if",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "1176.03 -18.475"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "current_parameter",
+                            "nodeType": "Core::Array::get_from_array",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-2.21248 301.817"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "delta_length",
+                            "nodeType": "Core::Math::subtract",
+                            "multiInPortNames": [
+                                "first1",
+                                "length"
+                            ],
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "20.3252 -462.718"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "parameter",
+                            "nodeType": "Core::Math::add",
+                            "multiInPortNames": [
+                                "value",
+                                "output1"
+                            ],
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "880.657 144.625"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "greater_or_equal",
+                            "nodeType": "Core::Logic::greater_or_equal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "297.938 -452.221"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "next_parameter",
+                            "nodeType": "Core::Array::get_from_array",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-1.34493 74.855"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "parameter_segment",
+                            "nodeType": "Core::Math::subtract",
+                            "multiInPortNames": [
+                                "value",
+                                "value1"
+                            ],
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "296.873 190.645"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "delta_parameter",
+                            "nodeType": "Core::Math::multiply",
+                            "multiInPortNames": [
+                                "output1",
+                                "output2"
+                            ],
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "590.967 -8.02217"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "ratio",
+                            "nodeType": "Core::Math::divide",
+                            "multiInPortNames": [
+                                "output1",
+                                "output2"
+                            ],
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "315.381 -181.776"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "next_length",
+                            "nodeType": "Core::Array::get_from_array",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-286.618 -464.05"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "current_length",
+                            "nodeType": "Core::Array::get_from_array",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-297.028 -201.797"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "to_float",
+                            "nodeType": "Core::Type_Conversion::to_float",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "1434.83 -43.3964"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "length_segment",
+                            "nodeType": "Core::Math::subtract",
+                            "multiInPortNames": [
+                                "value",
+                                "value1"
+                            ],
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "9.5 -185"
+                                }
+                            ]
+                        }
+                    ],
+                    "connections": [
+                        {
+                            "source": "next_index.output",
+                            "target": "next_parameter.index"
+                        },
+                        {
+                            "source": "value.output",
+                            "target": "next_index.first.output1"
+                        },
+                        {
+                            "source": "current_parameter.value",
+                            "target": "if.true_case"
+                        },
+                        {
+                            "source": "current_parameter.value",
+                            "target": "parameter.first.value"
+                        },
+                        {
+                            "source": "current_parameter.value",
+                            "target": "parameter_segment.first.value1"
+                        },
+                        {
+                            "source": "delta_length.output",
+                            "target": "ratio.first.output1"
+                        },
+                        {
+                            "source": "parameter.output",
+                            "target": "if.false_case"
+                        },
+                        {
+                            "source": "greater_or_equal.output",
+                            "target": ".looping_condition"
+                        },
+                        {
+                            "source": "greater_or_equal.output",
+                            "target": "if.condition"
+                        },
+                        {
+                            "source": "next_parameter.value",
+                            "target": "parameter_segment.first.value"
+                        },
+                        {
+                            "source": "parameter_segment.output",
+                            "target": "delta_parameter.first.output1"
+                        },
+                        {
+                            "source": "delta_parameter.output",
+                            "target": "parameter.first.output1"
+                        },
+                        {
+                            "source": "ratio.output",
+                            "target": "delta_parameter.first.output2"
+                        },
+                        {
+                            "source": ".current_index",
+                            "target": "next_index.first.current_index"
+                        },
+                        {
+                            "source": ".current_index",
+                            "target": "current_parameter.index"
+                        },
+                        {
+                            "source": ".sample_parameters",
+                            "target": "current_parameter.array"
+                        },
+                        {
+                            "source": ".sample_parameters",
+                            "target": "next_parameter.array"
+                        },
+                        {
+                            "source": ".length",
+                            "target": "delta_length.first.first1"
+                        },
+                        {
+                            "source": ".length",
+                            "target": "greater_or_equal.first"
+                        },
+                        {
+                            "source": ".sample_lengths",
+                            "target": "next_length.array"
+                        },
+                        {
+                            "source": "next_index.output",
+                            "target": "next_length.index"
+                        },
+                        {
+                            "source": "next_length.value",
+                            "target": "greater_or_equal.second"
+                        },
+                        {
+                            "source": ".sample_lengths",
+                            "target": "current_length.array"
+                        },
+                        {
+                            "source": ".current_index",
+                            "target": "current_length.index"
+                        },
+                        {
+                            "source": "current_length.value",
+                            "target": "delta_length.first.length"
+                        },
+                        {
+                            "source": "if.output",
+                            "target": "to_float.from"
+                        },
+                        {
+                            "source": "to_float.float",
+                            "target": ".parameter"
+                        },
+                        {
+                            "source": "next_length.value",
+                            "target": "length_segment.first.value"
+                        },
+                        {
+                            "source": "current_length.value",
+                            "target": "length_segment.first.value1"
+                        },
+                        {
+                            "source": "length_segment.output",
+                            "target": "ratio.first.output2"
+                        }
+                    ],
+                    "values": [
+                        {
+                            "valueName": "value.value",
+                            "valueType": "long",
+                            "value": "1"
+                        }
+                    ],
+                    "reservedNodeNames": [
+                        {
+                            "name": "input"
+                        },
+                        {
+                            "name": "output"
+                        }
+                    ],
+                    "whileCompound": {
+                        "ports": []
+                    }
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "length_to_parameter",
+                    "nodeType": "length_to_parameter",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "-143.027 -108.639"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": ".sample_lengths",
+                    "target": "length_to_parameter.sample_lengths"
+                },
+                {
+                    "source": ".sample_parameters",
+                    "target": "length_to_parameter.sample_parameters"
+                },
+                {
+                    "source": ".sample_count",
+                    "target": "length_to_parameter.sample_count"
+                },
+                {
+                    "source": ".lengths",
+                    "target": "length_to_parameter.length"
+                },
+                {
+                    "source": "length_to_parameter.parameter",
+                    "target": ".parameters"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "length_to_parameter.length",
+                    "valueType": "double",
+                    "value": "5.194"
+                },
+                {
+                    "valueName": "length_to_parameter.sample_count",
+                    "valueType": "long",
+                    "value": "10"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ],
+            "iterateCompound": {
+                "ports": []
+            }
+        }
+    ]
+}
