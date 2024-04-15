@@ -12,7 +12,7 @@
     "compounds": [
         {
             "name": "gkRig::Motion::b_spline",
-            "uriImported": "stream:/bifrostGraphShape1",
+            "uriImported": "file:///b_spline.json",
             "metadata": [
                 {
                     "metaName": "io_nodes",
@@ -29,6 +29,11 @@
                                             "metaValue": "2"
                                         },
                                         {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-540.972 97.9951"
+                                        },
+                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
@@ -38,11 +43,6 @@
                                                     "metaName": "parameter"
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "-540.972 97.9951"
                                         }
                                     ]
                                 }
@@ -287,6 +287,16 @@
                     ]
                 },
                 {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "213.000000"
+                },
+                {
+                    "metaName": "_recentNode_",
+                    "metaType": "string",
+                    "metaValue": "BifrostGraph,Core::Logic,almost_equal"
+                },
+                {
                     "metaName": "_recentNode_",
                     "metaType": "string",
                     "metaValue": "BifrostGraph,Core::Type_Conversion,to_float"
@@ -307,14 +317,9 @@
                     "metaValue": "BifrostGraph,Core::Constants,float"
                 },
                 {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Math,clamp"
-                },
-                {
                     "metaName": "ViewportRect",
                     "metaType": "string",
-                    "metaValue": "84.8945 -303.575 4645.55 2672.46"
+                    "metaValue": "-1084.39 -874.804 5505 3206.75"
                 },
                 {
                     "metaName": "DisplayMode",
@@ -322,14 +327,9 @@
                     "metaValue": "2"
                 },
                 {
-                    "metaName": "zValue",
-                    "metaType": "string",
-                    "metaValue": "213.000000"
-                },
-                {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "-90.6038 -143.631"
+                    "metaValue": "1010.32 -314.49"
                 }
             ],
             "ports": [
@@ -363,7 +363,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "1531.26 975.025"
+                            "metaValue": "1531.26 929.901"
                         }
                     ]
                 },
@@ -1120,7 +1120,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "3641.77 1512.17"
+                            "metaValue": "3646 850.817"
                         }
                     ]
                 },
@@ -1136,7 +1136,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "3380.29 1771.63"
+                            "metaValue": "3384.52 1110.28"
                         }
                     ]
                 },
@@ -1153,22 +1153,6 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "1171.77 1019.37"
-                        }
-                    ]
-                },
-                {
-                    "nodeName": "equal",
-                    "nodeType": "Core::Logic::equal",
-                    "metadata": [
-                        {
-                            "metaName": "DisplayMode",
-                            "metaType": "string",
-                            "metaValue": "2"
-                        },
-                        {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "848.891 1091.15"
                         }
                     ]
                 },
@@ -1205,7 +1189,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "1523.19 1224.18"
+                            "metaValue": "1520.37 1152.26"
                         }
                     ]
                 },
@@ -1234,11 +1218,6 @@
                             "metaValue": "0"
                         },
                         {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "1804.5 1053.99"
-                        },
-                        {
                             "metaName": "PortExpandedState",
                             "metadata": [
                                 {
@@ -1247,6 +1226,11 @@
                                     "metaValue": "1"
                                 }
                             ]
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1815.78 883.363"
                         }
                     ]
                 },
@@ -1263,48 +1247,6 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "848.839 219.477"
-                        }
-                    ]
-                },
-                {
-                    "nodeName": "value17",
-                    "valueType": "float",
-                    "metadata": [
-                        {
-                            "metaName": "DisplayMode",
-                            "metaType": "string",
-                            "metaValue": "2"
-                        },
-                        {
-                            "metaName": "valuenode_defaultvalue",
-                            "metaType": "string",
-                            "metaValue": "2"
-                        },
-                        {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "1286.41 1568.74"
-                        }
-                    ]
-                },
-                {
-                    "nodeName": "value16",
-                    "valueType": "float",
-                    "metadata": [
-                        {
-                            "metaName": "DisplayMode",
-                            "metaType": "string",
-                            "metaValue": "2"
-                        },
-                        {
-                            "metaName": "valuenode_defaultvalue",
-                            "metaType": "string",
-                            "metaValue": "1"
-                        },
-                        {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "1536.97 1741.67"
                         }
                     ]
                 },
@@ -1328,11 +1270,6 @@
                             "metaValue": "0"
                         },
                         {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "1805.28 1568.71"
-                        },
-                        {
                             "metaName": "PortExpandedState",
                             "metadata": [
                                 {
@@ -1341,6 +1278,11 @@
                                     "metaValue": "1"
                                 }
                             ]
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1806.69 1161.18"
                         }
                     ]
                 },
@@ -1386,7 +1328,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "2115.44 1524.08"
+                            "metaValue": "2135.18 889.519"
                         }
                     ]
                 },
@@ -1430,11 +1372,6 @@
                             "metaValue": "0"
                         },
                         {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "2115.08 1745.41"
-                        },
-                        {
                             "metaName": "PortExpandedState",
                             "metadata": [
                                 {
@@ -1448,6 +1385,11 @@
                                     "metaValue": "0"
                                 }
                             ]
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "2134.82 1110.85"
                         }
                     ]
                 },
@@ -1491,11 +1433,6 @@
                             "metaValue": "0"
                         },
                         {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "2118.49 1976.81"
-                        },
-                        {
                             "metaName": "PortExpandedState",
                             "metadata": [
                                 {
@@ -1504,6 +1441,11 @@
                                     "metaValue": "0"
                                 }
                             ]
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "2138.23 1342.25"
                         }
                     ]
                 },
@@ -1523,7 +1465,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "2357.18 1510.43"
+                            "metaValue": "2376.92 875.869"
                         }
                     ]
                 },
@@ -1543,7 +1485,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "2355.9 1761"
+                            "metaValue": "2375.64 1126.44"
                         }
                     ]
                 },
@@ -1563,7 +1505,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "2362.27 2009.45"
+                            "metaValue": "2382.01 1374.89"
                         }
                     ]
                 },
@@ -1583,7 +1525,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "2646.55 1510.15"
+                            "metaValue": "2660.65 876.999"
                         }
                     ]
                 },
@@ -1603,7 +1545,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "2646.55 1756.41"
+                            "metaValue": "2660.65 1124.67"
                         }
                     ]
                 },
@@ -1623,27 +1565,7 @@
                         {
                             "metaName": "LayoutPos",
                             "metaType": "string",
-                            "metaValue": "2650.74 2007.04"
-                        }
-                    ]
-                },
-                {
-                    "nodeName": "multiply",
-                    "nodeType": "Core::Math::multiply",
-                    "multiInPortNames": [
-                        "output1",
-                        "output2"
-                    ],
-                    "metadata": [
-                        {
-                            "metaName": "DisplayMode",
-                            "metaType": "string",
-                            "metaValue": "2"
-                        },
-                        {
-                            "metaName": "LayoutPos",
-                            "metaType": "string",
-                            "metaValue": "1537.72 1520.61"
+                            "metaValue": "2664.84 1375.3"
                         }
                     ]
                 },
@@ -1680,6 +1602,22 @@
                             "metaName": "LayoutPos",
                             "metaType": "string",
                             "metaValue": "278.811 -121.672"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "almost_equal",
+                    "nodeType": "Core::Logic::almost_equal",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "867.109 1084.07"
                         }
                     ]
                 }
@@ -1752,10 +1690,6 @@
                 {
                     "source": "last.output",
                     "target": "less_or_equal.second"
-                },
-                {
-                    "source": "last.output",
-                    "target": "equal.first"
                 },
                 {
                     "source": "is_last_segment.output",
@@ -1878,14 +1812,6 @@
                     "target": "value1.value.y"
                 },
                 {
-                    "source": "set_last_param_to_1.output",
-                    "target": "multiply.first.output1"
-                },
-                {
-                    "source": "equal.output",
-                    "target": "set_last_param_to_1.condition"
-                },
-                {
                     "source": "modulo.remainder",
                     "target": "set_last_param_to_1.false_case"
                 },
@@ -1908,14 +1834,6 @@
                 {
                     "source": "clamp.clamped",
                     "target": "i0.from"
-                },
-                {
-                    "source": "value17.output",
-                    "target": "multiply.first.output2"
-                },
-                {
-                    "source": "value16.output",
-                    "target": "value19.value.y"
                 },
                 {
                     "source": "value19.output",
@@ -1966,10 +1884,6 @@
                     "target": "if_last_derivative.true_case"
                 },
                 {
-                    "source": "multiply.output",
-                    "target": "value19.value.x"
-                },
-                {
                     "source": ".cvs",
                     "target": "cv_count.array"
                 },
@@ -2007,10 +1921,6 @@
                 },
                 {
                     "source": "remap_param.output",
-                    "target": "equal.second"
-                },
-                {
-                    "source": "remap_param.output",
                     "target": "greater_or_equal_to_0.first"
                 },
                 {
@@ -2024,6 +1934,26 @@
                 {
                     "source": "remap_param.output",
                     "target": "less_or_equal.first"
+                },
+                {
+                    "source": "set_last_param_to_1.output",
+                    "target": "value19.value.x"
+                },
+                {
+                    "source": "value2.output",
+                    "target": "value19.value.y"
+                },
+                {
+                    "source": "last.output",
+                    "target": "almost_equal.first"
+                },
+                {
+                    "source": "remap_param.output",
+                    "target": "almost_equal.second"
+                },
+                {
+                    "source": "almost_equal.output",
+                    "target": "set_last_param_to_1.condition"
                 }
             ],
             "values": [
@@ -2166,16 +2096,6 @@
                     }
                 },
                 {
-                    "valueName": "value17.value",
-                    "valueType": "float",
-                    "value": "2f"
-                },
-                {
-                    "valueName": "value16.value",
-                    "valueType": "float",
-                    "value": "1f"
-                },
-                {
                     "valueName": "value19.value",
                     "valueType": "Math::float2",
                     "value": {
@@ -2188,9 +2108,9 @@
                     "valueType": "Math::float3x2",
                     "value": {
                         "c0": {
-                            "x": "1f",
-                            "y": "-1.5f",
-                            "z": "0.5f"
+                            "x": "2f",
+                            "y": "-3f",
+                            "z": "1f"
                         },
                         "c1": {
                             "x": "-2f",
@@ -2204,9 +2124,9 @@
                     "valueType": "Math::float3x2",
                     "value": {
                         "c0": {
-                            "x": "0.5f",
-                            "y": "-1f",
-                            "z": "0.5f"
+                            "x": "1f",
+                            "y": "-2f",
+                            "z": "1f"
                         },
                         "c1": {
                             "x": "-1f",
@@ -2220,9 +2140,9 @@
                     "valueType": "Math::float3x2",
                     "value": {
                         "c0": {
-                            "x": "0.5f",
-                            "y": "-1.5f",
-                            "z": "1f"
+                            "x": "1f",
+                            "y": "-3f",
+                            "z": "2f"
                         },
                         "c1": {
                             "x": "-1f",
@@ -2230,6 +2150,11 @@
                             "z": "0f"
                         }
                     }
+                },
+                {
+                    "valueName": "almost_equal.tolerance",
+                    "valueType": "double",
+                    "value": "1.0000000000000001e-05"
                 }
             ],
             "reservedNodeNames": [
