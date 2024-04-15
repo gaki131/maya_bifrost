@@ -30,8 +30,8 @@ This compound calcultes total arc length of quadratic B-Spline curve that would 
 ### Inputs
   - **cvs** (type: array\<Math::float3\> | array<\Math::double3\>)<br>
     Control vertices used for creating the quadratic B-Spline of interest. You need to have minimum 4 cvs.
-  - **higher_precision** (bool)<br>
-    If True, double the samples for higher accuracy.
+  - **precision** (type: long)<br>
+    Sample counts. The higher the higher accuracy.
 ### Outputs
   - **arc_length** (type: double)<br>
     Total arc length of the B-Spline curve generated from the given control vertices.
