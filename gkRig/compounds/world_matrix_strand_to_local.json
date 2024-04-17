@@ -12,7 +12,7 @@
     "compounds": [
         {
             "name": "gkRig::Motion::world_matrix_strand_to_local",
-            "uriImported": "stream:/b_spline_exampleShape",
+            "uriImported": "file:///world_matrix_strand_to_local.json",
             "metadata": [
                 {
                     "metaName": "io_nodes",
@@ -60,48 +60,23 @@
                                             "metaValue": "2"
                                         },
                                         {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1088.89 -141.223"
+                                        },
+                                        {
                                             "metaName": "io_ports",
                                             "metadata": [
                                                 {
                                                     "metaName": "local_matrices"
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "metaName": "LayoutPos",
-                                            "metaType": "string",
-                                            "metaValue": "1088.89 -141.223"
                                         }
                                     ]
                                 }
                             ]
                         }
                     ]
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Type_Conversion,from_type_any"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Array,set_in_array"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Constants,float"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Core::Array,get_from_array"
-                },
-                {
-                    "metaName": "_recentNode_",
-                    "metaType": "string",
-                    "metaValue": "BifrostGraph,Print,print_array"
                 },
                 {
                     "metaName": "ViewportRect",
@@ -116,7 +91,7 @@
                 {
                     "metaName": "LayoutPos",
                     "metaType": "string",
-                    "metaValue": "2149.2 -667.787"
+                    "metaValue": "1779.47 -360.469"
                 }
             ],
             "terminalStates": [
