@@ -1,0 +1,2976 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "gkRig::Utility::shortest_path_on_mesh",
+            "uriImported": "file:///shortest_path_on_mesh.json",
+            "metadata": [
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-74.5148 -235.733"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "mesh"
+                                                },
+                                                {
+                                                    "metaName": "start"
+                                                },
+                                                {
+                                                    "metaName": "end"
+                                                },
+                                                {
+                                                    "metaName": "max_iterations"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1338.12 -348.916"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "shortest_path"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-87.8263 -840.47 1456.05 1237.53"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "1670.88 412.576"
+                }
+            ],
+            "terminalStates": [
+                {
+                    "name": "Core::Graph::terminal::final",
+                    "enabled": "false"
+                },
+                {
+                    "name": "Core::Graph::terminal::proxy",
+                    "enabled": "false"
+                },
+                {
+                    "name": "Core::Graph::terminal::diagnostic",
+                    "enabled": "false"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "mesh",
+                    "portDirection": "input",
+                    "portDefaultType": "Object",
+                    "portDefault": {}
+                },
+                {
+                    "portName": "shortest_path",
+                    "portDirection": "output"
+                },
+                {
+                    "portName": "start",
+                    "portDirection": "input",
+                    "portDefaultType": "Math::float3",
+                    "portDefault": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "portName": "end",
+                    "portDirection": "input",
+                    "portDefaultType": "Math::float3",
+                    "portDefault": {
+                        "x": "0f",
+                        "y": "0f",
+                        "z": "0f"
+                    }
+                },
+                {
+                    "portName": "max_iterations",
+                    "portDirection": "input",
+                    "portType": "long",
+                    "portDefault": "600"
+                }
+            ],
+            "compounds": [
+                {
+                    "name": "dijkstra",
+                    "uriImported": "file:///shortest_path_on_mesh.json",
+                    "metadata": [
+                        {
+                            "metaName": "icon",
+                            "metaType": "string",
+                            "metaValue": "<NATIVE>../icons/LoopDo_While.svg"
+                        },
+                        {
+                            "metaName": "icon",
+                            "metaType": "string",
+                            "metaValue": "<NATIVE>../icons/LoopDo_While.svg"
+                        },
+                        {
+                            "metaName": "icon",
+                            "metaType": "string",
+                            "metaValue": "<NATIVE>../icons/LoopDo_While.svg"
+                        },
+                        {
+                            "metaName": "icon",
+                            "metaType": "string",
+                            "metaValue": "<NATIVE>../icons/LoopDo_While.svg"
+                        },
+                        {
+                            "metaName": "icon",
+                            "metaType": "string",
+                            "metaValue": "<NATIVE>../icons/LoopDo_While.svg"
+                        },
+                        {
+                            "metaName": "io_nodes",
+                            "metadata": [
+                                {
+                                    "metaName": "io_inodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "input",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "-281.97 569.966"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "max_iterations"
+                                                        },
+                                                        {
+                                                            "metaName": "current_index"
+                                                        },
+                                                        {
+                                                            "metaName": "mesh_positions"
+                                                        },
+                                                        {
+                                                            "metaName": "start_index"
+                                                        },
+                                                        {
+                                                            "metaName": "end_index"
+                                                        },
+                                                        {
+                                                            "metaName": "point_neighbors"
+                                                        },
+                                                        {
+                                                            "metaName": "distances"
+                                                        },
+                                                        {
+                                                            "metaName": "distance_queue"
+                                                        },
+                                                        {
+                                                            "metaName": "index_queue"
+                                                        },
+                                                        {
+                                                            "metaName": "path_queue"
+                                                        },
+                                                        {
+                                                            "metaName": "shortest_path"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "io_onodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "output",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "DisplayMode",
+                                                    "metaType": "string",
+                                                    "metaValue": "2"
+                                                },
+                                                {
+                                                    "metaName": "LayoutPos",
+                                                    "metaType": "string",
+                                                    "metaValue": "2143.99 500.67"
+                                                },
+                                                {
+                                                    "metaName": "io_ports",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "looping_condition"
+                                                        },
+                                                        {
+                                                            "metaName": "output_shortest_path"
+                                                        },
+                                                        {
+                                                            "metaName": "output_distances"
+                                                        },
+                                                        {
+                                                            "metaName": "output_distance_queue"
+                                                        },
+                                                        {
+                                                            "metaName": "output_index_queue"
+                                                        },
+                                                        {
+                                                            "metaName": "output_path_queue"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Logic,not_equal"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Iterators,do_while"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Conversion,vector4_to_vector3"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Constants,float"
+                        },
+                        {
+                            "metaName": "_recentNode_",
+                            "metaType": "string",
+                            "metaValue": "BifrostGraph,Core::Math,subtract"
+                        },
+                        {
+                            "metaName": "ViewportRect",
+                            "metaType": "string",
+                            "metaValue": "-1170.16 -26.3332 2553.16 1487.26"
+                        }
+                    ],
+                    "ports": [
+                        {
+                            "portName": "max_iterations",
+                            "portDirection": "input",
+                            "portType": "long",
+                            "portIterationLimit": "true"
+                        },
+                        {
+                            "portName": "current_index",
+                            "portDirection": "input",
+                            "portType": "long",
+                            "portIterationCounter": "true"
+                        },
+                        {
+                            "portName": "mesh_positions",
+                            "portDirection": "input"
+                        },
+                        {
+                            "portName": "start_index",
+                            "portDirection": "input"
+                        },
+                        {
+                            "portName": "end_index",
+                            "portDirection": "input"
+                        },
+                        {
+                            "portName": "point_neighbors",
+                            "portDirection": "input"
+                        },
+                        {
+                            "portName": "distances",
+                            "portDirection": "input"
+                        },
+                        {
+                            "portName": "distance_queue",
+                            "portDirection": "input"
+                        },
+                        {
+                            "portName": "index_queue",
+                            "portDirection": "input"
+                        },
+                        {
+                            "portName": "path_queue",
+                            "portDirection": "input"
+                        },
+                        {
+                            "portName": "shortest_path",
+                            "portDirection": "input"
+                        },
+                        {
+                            "portName": "output_shortest_path",
+                            "portDirection": "output"
+                        },
+                        {
+                            "portName": "output_distances",
+                            "portDirection": "output"
+                        },
+                        {
+                            "portName": "output_distance_queue",
+                            "portDirection": "output"
+                        },
+                        {
+                            "portName": "output_index_queue",
+                            "portDirection": "output"
+                        },
+                        {
+                            "portName": "output_path_queue",
+                            "portDirection": "output"
+                        }
+                    ],
+                    "compounds": [
+                        {
+                            "name": "sort_indices",
+                            "uriImported": "file:///shortest_path_on_mesh.json",
+                            "metadata": [
+                                {
+                                    "metaName": "icon",
+                                    "metaType": "string",
+                                    "metaValue": "<NATIVE>../icons/LoopIterate.svg"
+                                },
+                                {
+                                    "metaName": "icon",
+                                    "metaType": "string",
+                                    "metaValue": "<NATIVE>../icons/LoopIterate.svg"
+                                },
+                                {
+                                    "metaName": "icon",
+                                    "metaType": "string",
+                                    "metaValue": "<NATIVE>../icons/LoopIterate.svg"
+                                },
+                                {
+                                    "metaName": "icon",
+                                    "metaType": "string",
+                                    "metaValue": "<NATIVE>../icons/LoopIterate.svg"
+                                },
+                                {
+                                    "metaName": "icon",
+                                    "metaType": "string",
+                                    "metaValue": "<NATIVE>../icons/LoopIterate.svg"
+                                },
+                                {
+                                    "metaName": "ViewportRect",
+                                    "metaType": "string",
+                                    "metaValue": "-736 -560 1473 1120"
+                                },
+                                {
+                                    "metaName": "_recentNode_",
+                                    "metaType": "string",
+                                    "metaValue": "BifrostGraph,Core::Array,array_size"
+                                },
+                                {
+                                    "metaName": "_recentNode_",
+                                    "metaType": "string",
+                                    "metaValue": "BifrostGraph,Core::Array,get_from_array"
+                                },
+                                {
+                                    "metaName": "_recentNode_",
+                                    "metaType": "string",
+                                    "metaValue": "BifrostGraph,Core::Iterators,iterate"
+                                },
+                                {
+                                    "metaName": "_recentNode_",
+                                    "metaType": "string",
+                                    "metaValue": "BifrostGraph,Core::Math,subtract"
+                                },
+                                {
+                                    "metaName": "_recentNode_",
+                                    "metaType": "string",
+                                    "metaValue": "BifrostGraph,Core::Logic,greater_or_equal"
+                                },
+                                {
+                                    "metaName": "io_nodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "io_inodes",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "input",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "DisplayMode",
+                                                            "metaType": "string",
+                                                            "metaValue": "2"
+                                                        },
+                                                        {
+                                                            "metaName": "LayoutPos",
+                                                            "metaType": "string",
+                                                            "metaValue": "-646.39 -73.0347"
+                                                        },
+                                                        {
+                                                            "metaName": "io_ports",
+                                                            "metadata": [
+                                                                {
+                                                                    "metaName": "max_iterations"
+                                                                },
+                                                                {
+                                                                    "metaName": "current_index"
+                                                                },
+                                                                {
+                                                                    "metaName": "sorted_indices"
+                                                                },
+                                                                {
+                                                                    "metaName": "index_queue"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "io_onodes",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "output",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "DisplayMode",
+                                                            "metaType": "string",
+                                                            "metaValue": "2"
+                                                        },
+                                                        {
+                                                            "metaName": "LayoutPos",
+                                                            "metaType": "string",
+                                                            "metaValue": "256.835 -102.023"
+                                                        },
+                                                        {
+                                                            "metaName": "io_ports",
+                                                            "metadata": [
+                                                                {
+                                                                    "metaName": "value"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "ports": [
+                                {
+                                    "portName": "max_iterations",
+                                    "portDirection": "input",
+                                    "portType": "long",
+                                    "portIterationLimit": "true"
+                                },
+                                {
+                                    "portName": "current_index",
+                                    "portDirection": "input",
+                                    "portType": "long",
+                                    "portIterationCounter": "true"
+                                },
+                                {
+                                    "portName": "sorted_indices",
+                                    "portDirection": "input"
+                                },
+                                {
+                                    "portName": "index_queue",
+                                    "portDirection": "input"
+                                },
+                                {
+                                    "portName": "value",
+                                    "portDirection": "output",
+                                    "portIterationTarget": "true"
+                                }
+                            ],
+                            "compoundNodes": [
+                                {
+                                    "nodeName": "cur_index",
+                                    "nodeType": "Core::Array::get_from_array",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-340.741 -140.318"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "cur_index_from_index_queue",
+                                    "nodeType": "Core::Array::get_from_array",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-55.2091 -17.3471"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "connections": [
+                                {
+                                    "source": "cur_index.value",
+                                    "target": "cur_index_from_index_queue.index"
+                                },
+                                {
+                                    "source": "cur_index_from_index_queue.value",
+                                    "target": ".value"
+                                },
+                                {
+                                    "source": ".current_index",
+                                    "target": "cur_index.index"
+                                },
+                                {
+                                    "source": ".sorted_indices",
+                                    "target": "cur_index.array"
+                                },
+                                {
+                                    "source": ".index_queue",
+                                    "target": "cur_index_from_index_queue.array"
+                                }
+                            ],
+                            "values": [],
+                            "reservedNodeNames": [
+                                {
+                                    "name": "input"
+                                },
+                                {
+                                    "name": "output"
+                                }
+                            ],
+                            "iterateCompound": {
+                                "ports": []
+                            }
+                        },
+                        {
+                            "name": "sort_path",
+                            "uriImported": "file:///shortest_path_on_mesh.json",
+                            "metadata": [
+                                {
+                                    "metaName": "icon",
+                                    "metaType": "string",
+                                    "metaValue": "<NATIVE>../icons/LoopIterate.svg"
+                                },
+                                {
+                                    "metaName": "icon",
+                                    "metaType": "string",
+                                    "metaValue": "<NATIVE>../icons/LoopIterate.svg"
+                                },
+                                {
+                                    "metaName": "icon",
+                                    "metaType": "string",
+                                    "metaValue": "<NATIVE>../icons/LoopIterate.svg"
+                                },
+                                {
+                                    "metaName": "icon",
+                                    "metaType": "string",
+                                    "metaValue": "<NATIVE>../icons/LoopIterate.svg"
+                                },
+                                {
+                                    "metaName": "icon",
+                                    "metaType": "string",
+                                    "metaValue": "<NATIVE>../icons/LoopIterate.svg"
+                                },
+                                {
+                                    "metaName": "ViewportRect",
+                                    "metaType": "string",
+                                    "metaValue": "-736 -560 1473 1120"
+                                },
+                                {
+                                    "metaName": "_recentNode_",
+                                    "metaType": "string",
+                                    "metaValue": "BifrostGraph,Core::Array,array_size"
+                                },
+                                {
+                                    "metaName": "_recentNode_",
+                                    "metaType": "string",
+                                    "metaValue": "BifrostGraph,Core::Array,get_from_array"
+                                },
+                                {
+                                    "metaName": "_recentNode_",
+                                    "metaType": "string",
+                                    "metaValue": "BifrostGraph,Core::Iterators,iterate"
+                                },
+                                {
+                                    "metaName": "_recentNode_",
+                                    "metaType": "string",
+                                    "metaValue": "BifrostGraph,Core::Math,subtract"
+                                },
+                                {
+                                    "metaName": "_recentNode_",
+                                    "metaType": "string",
+                                    "metaValue": "BifrostGraph,Core::Logic,greater_or_equal"
+                                },
+                                {
+                                    "metaName": "io_nodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "io_inodes",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "input",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "DisplayMode",
+                                                            "metaType": "string",
+                                                            "metaValue": "2"
+                                                        },
+                                                        {
+                                                            "metaName": "LayoutPos",
+                                                            "metaType": "string",
+                                                            "metaValue": "-646.39 -73.0347"
+                                                        },
+                                                        {
+                                                            "metaName": "io_ports",
+                                                            "metadata": [
+                                                                {
+                                                                    "metaName": "max_iterations"
+                                                                },
+                                                                {
+                                                                    "metaName": "current_index"
+                                                                },
+                                                                {
+                                                                    "metaName": "sorted_indices"
+                                                                },
+                                                                {
+                                                                    "metaName": "path_queue"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "io_onodes",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "output",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "DisplayMode",
+                                                            "metaType": "string",
+                                                            "metaValue": "2"
+                                                        },
+                                                        {
+                                                            "metaName": "LayoutPos",
+                                                            "metaType": "string",
+                                                            "metaValue": "256.835 -102.023"
+                                                        },
+                                                        {
+                                                            "metaName": "io_ports",
+                                                            "metadata": [
+                                                                {
+                                                                    "metaName": "value"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "ports": [
+                                {
+                                    "portName": "max_iterations",
+                                    "portDirection": "input",
+                                    "portType": "long",
+                                    "portIterationLimit": "true"
+                                },
+                                {
+                                    "portName": "current_index",
+                                    "portDirection": "input",
+                                    "portType": "long",
+                                    "portIterationCounter": "true"
+                                },
+                                {
+                                    "portName": "sorted_indices",
+                                    "portDirection": "input"
+                                },
+                                {
+                                    "portName": "path_queue",
+                                    "portDirection": "input"
+                                },
+                                {
+                                    "portName": "value",
+                                    "portDirection": "output",
+                                    "portIterationTarget": "true"
+                                }
+                            ],
+                            "compoundNodes": [
+                                {
+                                    "nodeName": "cur_index",
+                                    "nodeType": "Core::Array::get_from_array",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-345.741 -131.318"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "cur_path_from_path_queue",
+                                    "nodeType": "Core::Array::get_from_array",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-55.2091 -17.3471"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "connections": [
+                                {
+                                    "source": "cur_index.value",
+                                    "target": "cur_path_from_path_queue.index"
+                                },
+                                {
+                                    "source": "cur_path_from_path_queue.value",
+                                    "target": ".value"
+                                },
+                                {
+                                    "source": ".current_index",
+                                    "target": "cur_index.index"
+                                },
+                                {
+                                    "source": ".sorted_indices",
+                                    "target": "cur_index.array"
+                                },
+                                {
+                                    "source": ".path_queue",
+                                    "target": "cur_path_from_path_queue.array"
+                                }
+                            ],
+                            "values": [],
+                            "reservedNodeNames": [
+                                {
+                                    "name": "input"
+                                },
+                                {
+                                    "name": "output"
+                                }
+                            ],
+                            "iterateCompound": {
+                                "ports": []
+                            }
+                        },
+                        {
+                            "name": "iterate_neighbors",
+                            "uriImported": "file:///shortest_path_on_mesh.json",
+                            "metadata": [
+                                {
+                                    "metaName": "icon",
+                                    "metaType": "string",
+                                    "metaValue": "<NATIVE>../icons/LoopIterate.svg"
+                                },
+                                {
+                                    "metaName": "icon",
+                                    "metaType": "string",
+                                    "metaValue": "<NATIVE>../icons/LoopIterate.svg"
+                                },
+                                {
+                                    "metaName": "icon",
+                                    "metaType": "string",
+                                    "metaValue": "<NATIVE>../icons/LoopIterate.svg"
+                                },
+                                {
+                                    "metaName": "icon",
+                                    "metaType": "string",
+                                    "metaValue": "<NATIVE>../icons/LoopIterate.svg"
+                                },
+                                {
+                                    "metaName": "icon",
+                                    "metaType": "string",
+                                    "metaValue": "<NATIVE>../icons/LoopIterate.svg"
+                                },
+                                {
+                                    "metaName": "_recentNode_",
+                                    "metaType": "string",
+                                    "metaValue": "BifrostGraph,Core::Array,resize_array"
+                                },
+                                {
+                                    "metaName": "_recentNode_",
+                                    "metaType": "string",
+                                    "metaValue": "BifrostGraph,Core::Math,add"
+                                },
+                                {
+                                    "metaName": "_recentNode_",
+                                    "metaType": "string",
+                                    "metaValue": "BifrostGraph,Core::Array,array_size"
+                                },
+                                {
+                                    "metaName": "_recentNode_",
+                                    "metaType": "string",
+                                    "metaValue": "BifrostGraph,Core::Array,set_in_array"
+                                },
+                                {
+                                    "metaName": "_recentNode_",
+                                    "metaType": "string",
+                                    "metaValue": "BifrostGraph,Core::Logic,members_if"
+                                },
+                                {
+                                    "metaName": "io_nodes",
+                                    "metadata": [
+                                        {
+                                            "metaName": "io_inodes",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "input",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "DisplayMode",
+                                                            "metaType": "string",
+                                                            "metaValue": "2"
+                                                        },
+                                                        {
+                                                            "metaName": "io_ports",
+                                                            "metadata": [
+                                                                {
+                                                                    "metaName": "max_iterations"
+                                                                },
+                                                                {
+                                                                    "metaName": "current_index"
+                                                                },
+                                                                {
+                                                                    "metaName": "neighbor_indices"
+                                                                },
+                                                                {
+                                                                    "metaName": "cur_distance"
+                                                                },
+                                                                {
+                                                                    "metaName": "distances"
+                                                                },
+                                                                {
+                                                                    "metaName": "cur_position"
+                                                                },
+                                                                {
+                                                                    "metaName": "point_position"
+                                                                },
+                                                                {
+                                                                    "metaName": "distance_queue"
+                                                                },
+                                                                {
+                                                                    "metaName": "index_queue"
+                                                                },
+                                                                {
+                                                                    "metaName": "path_queue"
+                                                                },
+                                                                {
+                                                                    "metaName": "cur_index"
+                                                                },
+                                                                {
+                                                                    "metaName": "cur_path"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "metaName": "LayoutPos",
+                                                            "metaType": "string",
+                                                            "metaValue": "-550.849 178.532"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "io_onodes",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "output",
+                                                    "metadata": [
+                                                        {
+                                                            "metaName": "DisplayMode",
+                                                            "metaType": "string",
+                                                            "metaValue": "2"
+                                                        },
+                                                        {
+                                                            "metaName": "io_ports",
+                                                            "metadata": [
+                                                                {
+                                                                    "metaName": "output_distances"
+                                                                },
+                                                                {
+                                                                    "metaName": "output_distance_queue"
+                                                                },
+                                                                {
+                                                                    "metaName": "output_index_queue"
+                                                                },
+                                                                {
+                                                                    "metaName": "output_path_queue"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "metaName": "LayoutPos",
+                                                            "metaType": "string",
+                                                            "metaValue": "1577.47 334.179"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "metaName": "ViewportRect",
+                                    "metaType": "string",
+                                    "metaValue": "-1355.53 -327.396 3527.56 2054.86"
+                                }
+                            ],
+                            "ports": [
+                                {
+                                    "portName": "max_iterations",
+                                    "portDirection": "input",
+                                    "portType": "long",
+                                    "portIterationLimit": "true"
+                                },
+                                {
+                                    "portName": "current_index",
+                                    "portDirection": "input",
+                                    "portType": "long",
+                                    "portIterationCounter": "true"
+                                },
+                                {
+                                    "portName": "neighbor_indices",
+                                    "portDirection": "input"
+                                },
+                                {
+                                    "portName": "cur_distance",
+                                    "portDirection": "input"
+                                },
+                                {
+                                    "portName": "distances",
+                                    "portDirection": "input"
+                                },
+                                {
+                                    "portName": "cur_position",
+                                    "portDirection": "input"
+                                },
+                                {
+                                    "portName": "point_position",
+                                    "portDirection": "input"
+                                },
+                                {
+                                    "portName": "distance_queue",
+                                    "portDirection": "input"
+                                },
+                                {
+                                    "portName": "index_queue",
+                                    "portDirection": "input"
+                                },
+                                {
+                                    "portName": "path_queue",
+                                    "portDirection": "input"
+                                },
+                                {
+                                    "portName": "cur_index",
+                                    "portDirection": "input"
+                                },
+                                {
+                                    "portName": "cur_path",
+                                    "portDirection": "input"
+                                },
+                                {
+                                    "portName": "output_distances",
+                                    "portDirection": "output"
+                                },
+                                {
+                                    "portName": "output_distance_queue",
+                                    "portDirection": "output"
+                                },
+                                {
+                                    "portName": "output_index_queue",
+                                    "portDirection": "output"
+                                },
+                                {
+                                    "portName": "output_path_queue",
+                                    "portDirection": "output"
+                                }
+                            ],
+                            "compoundNodes": [
+                                {
+                                    "nodeName": "get_neighbor_index",
+                                    "nodeType": "Core::Array::get_from_array",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-278.146 109.794"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "cur_neighbor_pos",
+                                    "nodeType": "Core::Array::get_from_array",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-34.0272 111.955"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "cur_pos_to_neighbor",
+                                    "nodeType": "Core::Math::subtract",
+                                    "multiInPortNames": [
+                                        "value",
+                                        "cur_position"
+                                    ],
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "218.34 103.116"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "length",
+                                    "nodeType": "Core::Math::length",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "456.575 102.695"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "added_distance",
+                                    "nodeType": "Core::Math::add",
+                                    "multiInPortNames": [
+                                        "cur_distance",
+                                        "length"
+                                    ],
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "699.349 104.69"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "less",
+                                    "nodeType": "Core::Logic::less",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "972.01 98.4568"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "distance_from_distances",
+                                    "nodeType": "Core::Array::get_from_array",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "697.179 331.82"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "set_new_distance",
+                                    "nodeType": "Core::Array::set_in_array",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "968.415 297.778"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "distances_selector",
+                                    "nodeType": "Core::Logic::if",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1244.8 188.791"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "resize_distance_queue",
+                                    "nodeType": "Core::Array::resize_array",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "963.713 532.531"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "distance_queue_size",
+                                    "nodeType": "Core::Array::array_size",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "435.331 521.89"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "new_distance_queue_size",
+                                    "nodeType": "Core::Math::add",
+                                    "multiInPortNames": [
+                                        "size",
+                                        "output1"
+                                    ],
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "696.127 581.67"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "value",
+                                    "valueType": "long",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "431.426 700.478"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "resize_index_queue",
+                                    "nodeType": "Core::Array::resize_array",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "964.584 757.176"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "resize_path_queue",
+                                    "nodeType": "Core::Array::resize_array",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "971.391 994.488"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "cur_path_size",
+                                    "nodeType": "Core::Array::array_size",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "191.625 846"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "new_path_size",
+                                    "nodeType": "Core::Math::add",
+                                    "multiInPortNames": [
+                                        "size",
+                                        "output1"
+                                    ],
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "441.552 994.491"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "value1",
+                                    "valueType": "long",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "191.238 1042.66"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "resize_array",
+                                    "nodeType": "Core::Array::resize_array",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "710.763 996.778"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "distance_queue_selector",
+                                    "nodeType": "Core::Logic::if",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1248.95 490.455"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "index_queue_selector",
+                                    "nodeType": "Core::Logic::if",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1249.65 750.582"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeName": "path_queue_selector",
+                                    "nodeType": "Core::Logic::if",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1249.54 998.788"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "connections": [
+                                {
+                                    "source": "get_neighbor_index.value",
+                                    "target": "cur_neighbor_pos.index"
+                                },
+                                {
+                                    "source": "get_neighbor_index.value",
+                                    "target": "distance_from_distances.index"
+                                },
+                                {
+                                    "source": "get_neighbor_index.value",
+                                    "target": "set_new_distance.index"
+                                },
+                                {
+                                    "source": "get_neighbor_index.value",
+                                    "target": "resize_index_queue.default"
+                                },
+                                {
+                                    "source": "cur_neighbor_pos.value",
+                                    "target": "cur_pos_to_neighbor.first.value"
+                                },
+                                {
+                                    "source": "cur_pos_to_neighbor.output",
+                                    "target": "length.vector"
+                                },
+                                {
+                                    "source": "length.length",
+                                    "target": "added_distance.first.length"
+                                },
+                                {
+                                    "source": "added_distance.output",
+                                    "target": "less.first"
+                                },
+                                {
+                                    "source": "added_distance.output",
+                                    "target": "set_new_distance.value"
+                                },
+                                {
+                                    "source": "added_distance.output",
+                                    "target": "resize_distance_queue.default"
+                                },
+                                {
+                                    "source": "less.output",
+                                    "target": "distances_selector.condition"
+                                },
+                                {
+                                    "source": "less.output",
+                                    "target": "distance_queue_selector.condition"
+                                },
+                                {
+                                    "source": "less.output",
+                                    "target": "index_queue_selector.condition"
+                                },
+                                {
+                                    "source": "less.output",
+                                    "target": "path_queue_selector.condition"
+                                },
+                                {
+                                    "source": "distance_from_distances.value",
+                                    "target": "less.second"
+                                },
+                                {
+                                    "source": "set_new_distance.out_array",
+                                    "target": "distances_selector.true_case"
+                                },
+                                {
+                                    "source": "distances_selector.output",
+                                    "target": ".output_distances"
+                                },
+                                {
+                                    "source": "resize_distance_queue.resized",
+                                    "target": "distance_queue_selector.true_case"
+                                },
+                                {
+                                    "source": "distance_queue_size.size",
+                                    "target": "new_distance_queue_size.first.size"
+                                },
+                                {
+                                    "source": "new_distance_queue_size.output",
+                                    "target": "resize_distance_queue.new_size"
+                                },
+                                {
+                                    "source": "new_distance_queue_size.output",
+                                    "target": "resize_index_queue.new_size"
+                                },
+                                {
+                                    "source": "new_distance_queue_size.output",
+                                    "target": "resize_path_queue.new_size"
+                                },
+                                {
+                                    "source": "value.output",
+                                    "target": "new_distance_queue_size.first.output1"
+                                },
+                                {
+                                    "source": "resize_index_queue.resized",
+                                    "target": "index_queue_selector.true_case"
+                                },
+                                {
+                                    "source": "resize_path_queue.resized",
+                                    "target": "path_queue_selector.true_case"
+                                },
+                                {
+                                    "source": "cur_path_size.size",
+                                    "target": "new_path_size.first.size"
+                                },
+                                {
+                                    "source": "new_path_size.output",
+                                    "target": "resize_array.new_size"
+                                },
+                                {
+                                    "source": "value1.output",
+                                    "target": "new_path_size.first.output1"
+                                },
+                                {
+                                    "source": "resize_array.resized",
+                                    "target": "resize_path_queue.default"
+                                },
+                                {
+                                    "source": "distance_queue_selector.output",
+                                    "target": ".output_distance_queue"
+                                },
+                                {
+                                    "source": "index_queue_selector.output",
+                                    "target": ".output_index_queue"
+                                },
+                                {
+                                    "source": "path_queue_selector.output",
+                                    "target": ".output_path_queue"
+                                },
+                                {
+                                    "source": ".current_index",
+                                    "target": "get_neighbor_index.index"
+                                },
+                                {
+                                    "source": ".neighbor_indices",
+                                    "target": "get_neighbor_index.array"
+                                },
+                                {
+                                    "source": ".cur_distance",
+                                    "target": "added_distance.first.cur_distance"
+                                },
+                                {
+                                    "source": ".distances",
+                                    "target": "distance_from_distances.array"
+                                },
+                                {
+                                    "source": ".distances",
+                                    "target": "set_new_distance.array"
+                                },
+                                {
+                                    "source": ".distances",
+                                    "target": "distances_selector.false_case"
+                                },
+                                {
+                                    "source": ".cur_position",
+                                    "target": "cur_pos_to_neighbor.first.cur_position"
+                                },
+                                {
+                                    "source": ".point_position",
+                                    "target": "cur_neighbor_pos.array"
+                                },
+                                {
+                                    "source": ".distance_queue",
+                                    "target": "resize_distance_queue.array"
+                                },
+                                {
+                                    "source": ".distance_queue",
+                                    "target": "distance_queue_size.array"
+                                },
+                                {
+                                    "source": ".distance_queue",
+                                    "target": "distance_queue_selector.false_case"
+                                },
+                                {
+                                    "source": ".index_queue",
+                                    "target": "resize_index_queue.array"
+                                },
+                                {
+                                    "source": ".index_queue",
+                                    "target": "index_queue_selector.false_case"
+                                },
+                                {
+                                    "source": ".path_queue",
+                                    "target": "resize_path_queue.array"
+                                },
+                                {
+                                    "source": ".path_queue",
+                                    "target": "path_queue_selector.false_case"
+                                },
+                                {
+                                    "source": ".cur_index",
+                                    "target": "resize_array.default"
+                                },
+                                {
+                                    "source": ".cur_path",
+                                    "target": "cur_path_size.array"
+                                },
+                                {
+                                    "source": ".cur_path",
+                                    "target": "resize_array.array"
+                                }
+                            ],
+                            "values": [
+                                {
+                                    "valueName": "value.value",
+                                    "valueType": "long",
+                                    "value": "1"
+                                },
+                                {
+                                    "valueName": "value1.value",
+                                    "valueType": "long",
+                                    "value": "1"
+                                }
+                            ],
+                            "reservedNodeNames": [
+                                {
+                                    "name": "input"
+                                },
+                                {
+                                    "name": "output"
+                                }
+                            ],
+                            "iterateCompound": {
+                                "ports": [
+                                    {
+                                        "portKind": "state",
+                                        "inputPortName": "distances",
+                                        "outputPortName": "output_distances"
+                                    },
+                                    {
+                                        "portKind": "state",
+                                        "inputPortName": "distance_queue",
+                                        "outputPortName": "output_distance_queue"
+                                    },
+                                    {
+                                        "portKind": "state",
+                                        "inputPortName": "index_queue",
+                                        "outputPortName": "output_index_queue"
+                                    },
+                                    {
+                                        "portKind": "state",
+                                        "inputPortName": "path_queue",
+                                        "outputPortName": "output_path_queue"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "compoundNodes": [
+                        {
+                            "nodeName": "sorted_distance_queue",
+                            "nodeType": "Core::Array::sort_array_with_indices",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "-33.4533 689.765"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "shortest_index_in_queue",
+                            "nodeType": "Core::Array::last_in_array",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "219.857 588.381"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "cur_path",
+                            "nodeType": "Core::Array::get_from_array",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "478.017 530.387"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "queue_size",
+                            "nodeType": "Core::Array::array_size",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "220.538 798.617"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "cur_index",
+                            "nodeType": "Core::Array::get_from_array",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "482.275 334.421"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "queue_new_size",
+                            "nodeType": "Core::Math::subtract",
+                            "multiInPortNames": [
+                                "size",
+                                "output1"
+                            ],
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "487.101 857.722"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value",
+                            "valueType": "long",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "228.48 1011.22"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "path_size",
+                            "nodeType": "Core::Array::array_size",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "745.816 491.157"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "value1",
+                            "valueType": "long",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "743.55 660.163"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "sort_indices",
+                            "nodeType": "sort_indices",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "497.358 1096.44"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "resize_index_queue",
+                            "nodeType": "Core::Array::resize_array",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "757.461 1100.6"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "resize_distance_queue",
+                            "nodeType": "Core::Array::resize_array",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "744.422 850.436"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "path_new_size",
+                            "nodeType": "Core::Math::add",
+                            "multiInPortNames": [
+                                "size",
+                                "output1"
+                            ],
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "1005.33 473.421"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "sort_path",
+                            "nodeType": "sort_path",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "503.938 1421.52"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "resize_path_queue",
+                            "nodeType": "Core::Array::resize_array",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "772.171 1412.48"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "cur_neighbor_indices",
+                            "nodeType": "Core::Array::get_from_array",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "1022.24 1096.01"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "add_end_index",
+                            "nodeType": "Core::Array::resize_array",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "1301.54 247.909"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "cur_distance",
+                            "nodeType": "Core::Array::last_in_array",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "1297.65 664.404"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "distance",
+                            "nodeType": "Core::Array::get_from_array",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "1301.14 476.229"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "neighbor_count",
+                            "nodeType": "Core::Array::array_size",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "1288.56 1075.65"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "get_cur_position",
+                            "nodeType": "Core::Array::get_from_array",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "1292.95 848.147"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "if_not_found",
+                            "nodeType": "Core::Logic::if",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "1562.96 252.749"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "iterate_neighbors",
+                            "nodeType": "iterate_neighbors",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "1574.96 749.723"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "greater_or_equal",
+                            "nodeType": "Core::Logic::greater_or_equal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "1568.27 528.728"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "distances_selector",
+                            "nodeType": "Core::Logic::if",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "1872.7 524.519"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "distance_queue_selector",
+                            "nodeType": "Core::Logic::if",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "1855.49 745.757"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "index_queue_selector",
+                            "nodeType": "Core::Logic::if",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "1858.32 984.357"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "path_queue_selector",
+                            "nodeType": "Core::Logic::if",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "1855.74 1229.86"
+                                }
+                            ]
+                        },
+                        {
+                            "nodeName": "not_equal",
+                            "nodeType": "Core::Logic::not_equal",
+                            "metadata": [
+                                {
+                                    "metaName": "DisplayMode",
+                                    "metaType": "string",
+                                    "metaValue": "2"
+                                },
+                                {
+                                    "metaName": "LayoutPos",
+                                    "metaType": "string",
+                                    "metaValue": "753.807 271.384"
+                                }
+                            ]
+                        }
+                    ],
+                    "connections": [
+                        {
+                            "source": "sorted_distance_queue.sorted",
+                            "target": "cur_distance.array"
+                        },
+                        {
+                            "source": "sorted_distance_queue.sorted",
+                            "target": "resize_distance_queue.array"
+                        },
+                        {
+                            "source": "sorted_distance_queue.sorted",
+                            "target": "queue_size.array"
+                        },
+                        {
+                            "source": "sorted_distance_queue.sorted_indices",
+                            "target": "shortest_index_in_queue.array"
+                        },
+                        {
+                            "source": "sorted_distance_queue.sorted_indices",
+                            "target": "sort_indices.sorted_indices"
+                        },
+                        {
+                            "source": "sorted_distance_queue.sorted_indices",
+                            "target": "sort_path.sorted_indices"
+                        },
+                        {
+                            "source": "shortest_index_in_queue.last",
+                            "target": "cur_index.index"
+                        },
+                        {
+                            "source": "shortest_index_in_queue.last",
+                            "target": "cur_path.index"
+                        },
+                        {
+                            "source": "cur_path.value",
+                            "target": "iterate_neighbors.cur_path"
+                        },
+                        {
+                            "source": "cur_path.value",
+                            "target": "add_end_index.array"
+                        },
+                        {
+                            "source": "cur_path.value",
+                            "target": "path_size.array"
+                        },
+                        {
+                            "source": "queue_size.size",
+                            "target": "queue_new_size.first.size"
+                        },
+                        {
+                            "source": "queue_size.size",
+                            "target": "sort_indices.max_iterations"
+                        },
+                        {
+                            "source": "queue_size.size",
+                            "target": "sort_path.max_iterations"
+                        },
+                        {
+                            "source": "cur_index.value",
+                            "target": "distance.index"
+                        },
+                        {
+                            "source": "cur_index.value",
+                            "target": "cur_neighbor_indices.index"
+                        },
+                        {
+                            "source": "cur_index.value",
+                            "target": "get_cur_position.index"
+                        },
+                        {
+                            "source": "cur_index.value",
+                            "target": "iterate_neighbors.cur_index"
+                        },
+                        {
+                            "source": "queue_new_size.output",
+                            "target": "resize_distance_queue.new_size"
+                        },
+                        {
+                            "source": "queue_new_size.output",
+                            "target": "resize_index_queue.new_size"
+                        },
+                        {
+                            "source": "queue_new_size.output",
+                            "target": "resize_path_queue.new_size"
+                        },
+                        {
+                            "source": "value.output",
+                            "target": "queue_new_size.first.output1"
+                        },
+                        {
+                            "source": "path_size.size",
+                            "target": "path_new_size.first.size"
+                        },
+                        {
+                            "source": "value1.output",
+                            "target": "path_new_size.first.output1"
+                        },
+                        {
+                            "source": "sort_indices.value",
+                            "target": "resize_index_queue.array"
+                        },
+                        {
+                            "source": "resize_index_queue.resized",
+                            "target": "iterate_neighbors.index_queue"
+                        },
+                        {
+                            "source": "resize_index_queue.resized",
+                            "target": "index_queue_selector.false_case"
+                        },
+                        {
+                            "source": "resize_distance_queue.resized",
+                            "target": "iterate_neighbors.distance_queue"
+                        },
+                        {
+                            "source": "resize_distance_queue.resized",
+                            "target": "distance_queue_selector.false_case"
+                        },
+                        {
+                            "source": "path_new_size.output",
+                            "target": "add_end_index.new_size"
+                        },
+                        {
+                            "source": "sort_path.value",
+                            "target": "resize_path_queue.array"
+                        },
+                        {
+                            "source": "resize_path_queue.resized",
+                            "target": "iterate_neighbors.path_queue"
+                        },
+                        {
+                            "source": "resize_path_queue.resized",
+                            "target": "path_queue_selector.false_case"
+                        },
+                        {
+                            "source": "cur_neighbor_indices.value",
+                            "target": "neighbor_count.array"
+                        },
+                        {
+                            "source": "cur_neighbor_indices.value",
+                            "target": "iterate_neighbors.neighbor_indices"
+                        },
+                        {
+                            "source": "cur_distance.last",
+                            "target": "greater_or_equal.second"
+                        },
+                        {
+                            "source": "cur_distance.last",
+                            "target": "iterate_neighbors.cur_distance"
+                        },
+                        {
+                            "source": "distance.value",
+                            "target": "greater_or_equal.first"
+                        },
+                        {
+                            "source": "neighbor_count.size",
+                            "target": "iterate_neighbors.max_iterations"
+                        },
+                        {
+                            "source": "get_cur_position.value",
+                            "target": "iterate_neighbors.cur_position"
+                        },
+                        {
+                            "source": "iterate_neighbors.output_distances",
+                            "target": "distances_selector.true_case"
+                        },
+                        {
+                            "source": "iterate_neighbors.output_distance_queue",
+                            "target": "distance_queue_selector.true_case"
+                        },
+                        {
+                            "source": "iterate_neighbors.output_index_queue",
+                            "target": "index_queue_selector.true_case"
+                        },
+                        {
+                            "source": "iterate_neighbors.output_path_queue",
+                            "target": "path_queue_selector.true_case"
+                        },
+                        {
+                            "source": "greater_or_equal.output",
+                            "target": "distances_selector.condition"
+                        },
+                        {
+                            "source": "greater_or_equal.output",
+                            "target": "distance_queue_selector.condition"
+                        },
+                        {
+                            "source": "greater_or_equal.output",
+                            "target": "index_queue_selector.condition"
+                        },
+                        {
+                            "source": "greater_or_equal.output",
+                            "target": "path_queue_selector.condition"
+                        },
+                        {
+                            "source": ".distance_queue",
+                            "target": "sorted_distance_queue.array"
+                        },
+                        {
+                            "source": ".distances",
+                            "target": "iterate_neighbors.distances"
+                        },
+                        {
+                            "source": ".distances",
+                            "target": "distance.array"
+                        },
+                        {
+                            "source": ".end_index",
+                            "target": "add_end_index.default"
+                        },
+                        {
+                            "source": ".point_neighbors",
+                            "target": "cur_neighbor_indices.array"
+                        },
+                        {
+                            "source": ".index_queue",
+                            "target": "cur_index.array"
+                        },
+                        {
+                            "source": ".index_queue",
+                            "target": "sort_indices.index_queue"
+                        },
+                        {
+                            "source": ".path_queue",
+                            "target": "cur_path.array"
+                        },
+                        {
+                            "source": ".path_queue",
+                            "target": "sort_path.path_queue"
+                        },
+                        {
+                            "source": ".distances",
+                            "target": "distances_selector.false_case"
+                        },
+                        {
+                            "source": "if_not_found.output",
+                            "target": ".output_shortest_path"
+                        },
+                        {
+                            "source": ".end_index",
+                            "target": "not_equal.first"
+                        },
+                        {
+                            "source": "cur_index.value",
+                            "target": "not_equal.second"
+                        },
+                        {
+                            "source": "not_equal.output",
+                            "target": ".looping_condition"
+                        },
+                        {
+                            "source": "distances_selector.output",
+                            "target": ".output_distances"
+                        },
+                        {
+                            "source": "distance_queue_selector.output",
+                            "target": ".output_distance_queue"
+                        },
+                        {
+                            "source": "index_queue_selector.output",
+                            "target": ".output_index_queue"
+                        },
+                        {
+                            "source": "path_queue_selector.output",
+                            "target": ".output_path_queue"
+                        },
+                        {
+                            "source": ".mesh_positions",
+                            "target": "get_cur_position.array"
+                        },
+                        {
+                            "source": ".mesh_positions",
+                            "target": "iterate_neighbors.point_position"
+                        },
+                        {
+                            "source": ".shortest_path",
+                            "target": "if_not_found.true_case"
+                        },
+                        {
+                            "source": "add_end_index.resized",
+                            "target": "if_not_found.false_case"
+                        },
+                        {
+                            "source": "not_equal.output",
+                            "target": "if_not_found.condition"
+                        }
+                    ],
+                    "values": [
+                        {
+                            "valueName": "sorted_distance_queue.descending_order",
+                            "valueType": "bool",
+                            "value": "true"
+                        },
+                        {
+                            "valueName": "value.value",
+                            "valueType": "long",
+                            "value": "1"
+                        },
+                        {
+                            "valueName": "value1.value",
+                            "valueType": "long",
+                            "value": "1"
+                        },
+                        {
+                            "valueName": "sort_indices.max_iterations",
+                            "valueType": "long",
+                            "value": "10"
+                        },
+                        {
+                            "valueName": "sort_path.max_iterations",
+                            "valueType": "long",
+                            "value": "10"
+                        },
+                        {
+                            "valueName": "iterate_neighbors.max_iterations",
+                            "valueType": "long",
+                            "value": "10"
+                        }
+                    ],
+                    "reservedNodeNames": [
+                        {
+                            "name": "input"
+                        },
+                        {
+                            "name": "output"
+                        }
+                    ],
+                    "whileCompound": {
+                        "ports": [
+                            {
+                                "portKind": "state",
+                                "inputPortName": "distances",
+                                "outputPortName": "output_distances"
+                            },
+                            {
+                                "portKind": "state",
+                                "inputPortName": "distance_queue",
+                                "outputPortName": "output_distance_queue"
+                            },
+                            {
+                                "portKind": "state",
+                                "inputPortName": "index_queue",
+                                "outputPortName": "output_index_queue"
+                            },
+                            {
+                                "portKind": "state",
+                                "inputPortName": "path_queue",
+                                "outputPortName": "output_path_queue"
+                            },
+                            {
+                                "portKind": "state",
+                                "inputPortName": "shortest_path",
+                                "outputPortName": "output_shortest_path"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "end_point_on_mesh",
+                    "nodeType": "Geometry::Query::get_closest_point",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "275.862 267.604"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "get_point_position",
+                    "nodeType": "Geometry::Properties::get_point_position",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "801.26 -476.459"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "init_distances_with_numeric_max",
+                    "nodeType": "Core::Array::sequence_array",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "516.623 -645.473"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "init_path_queue",
+                    "nodeType": "Core::Array::sequence_array",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "798.97 467.963"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "mesh_point_count",
+                    "nodeType": "Geometry::Properties::get_point_count",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "260.568 -700.325"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "numeric_max",
+                    "nodeType": "Core::Constants::numeric_max",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "265.798 -503.009"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_start_distance_to_0",
+                    "nodeType": "Core::Array::set_in_array",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "795.006 -285.332"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "set_start_index",
+                    "nodeType": "Core::Array::set_in_array",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "790.227 223.484"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "start_point_on_mesh",
+                    "nodeType": "Geometry::Query::get_closest_point",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "278.927 -34.962"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "update_point_neighbors",
+                    "nodeType": "Geometry::Mesh::update_point_neighbors",
+                    "fanInPortNames": {
+                        "diagnostic_indices": []
+                    },
+                    "terminalStates": [
+                        {
+                            "name": "Core::Graph::terminal::final",
+                            "enabled": "false"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::proxy",
+                            "enabled": "false"
+                        },
+                        {
+                            "name": "Core::Graph::terminal::diagnostic",
+                            "enabled": "false"
+                        }
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "269.395 -316.15"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "value6",
+                    "valueType": "array<float>",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "valuenode_size",
+                            "metaValue": "1L"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "788.622 29.3816"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "value7",
+                    "valueType": "array<long>",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "valuenode_size",
+                            "metaValue": "1L"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "543.481 245.89"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "value9",
+                    "valueType": "array<long>",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "valuenode_defaultvalue",
+                            "metaType": "string",
+                            "metaValue": "0"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "540.269 513.234"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "dijkstra",
+                    "nodeType": "dijkstra",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "1086.77 -349.674"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": ".mesh",
+                    "target": "end_point_on_mesh.geometry"
+                },
+                {
+                    "source": ".mesh",
+                    "target": "get_point_position.geometry"
+                },
+                {
+                    "source": "mesh_point_count.count",
+                    "target": "init_distances_with_numeric_max.size"
+                },
+                {
+                    "source": "numeric_max.numeric_max",
+                    "target": "init_distances_with_numeric_max.start"
+                },
+                {
+                    "source": "init_distances_with_numeric_max.sequence",
+                    "target": "set_start_distance_to_0.array"
+                },
+                {
+                    "source": "value9.output",
+                    "target": "init_path_queue.start"
+                },
+                {
+                    "source": ".mesh",
+                    "target": "mesh_point_count.geometry"
+                },
+                {
+                    "source": "start_point_on_mesh.point_indices",
+                    "target": "set_start_distance_to_0.index"
+                },
+                {
+                    "source": "value7.output",
+                    "target": "set_start_index.array"
+                },
+                {
+                    "source": "start_point_on_mesh.point_indices",
+                    "target": "set_start_index.value"
+                },
+                {
+                    "source": ".mesh",
+                    "target": "start_point_on_mesh.geometry"
+                },
+                {
+                    "source": ".mesh",
+                    "target": "update_point_neighbors.mesh"
+                },
+                {
+                    "source": "get_point_position.point_position",
+                    "target": "dijkstra.mesh_positions"
+                },
+                {
+                    "source": "start_point_on_mesh.point_indices",
+                    "target": "dijkstra.start_index"
+                },
+                {
+                    "source": "end_point_on_mesh.point_indices",
+                    "target": "dijkstra.end_index"
+                },
+                {
+                    "source": "update_point_neighbors.point_neighbors",
+                    "target": "dijkstra.point_neighbors"
+                },
+                {
+                    "source": "set_start_distance_to_0.out_array",
+                    "target": "dijkstra.distances"
+                },
+                {
+                    "source": "set_start_index.out_array",
+                    "target": "dijkstra.index_queue"
+                },
+                {
+                    "source": "init_path_queue.sequence",
+                    "target": "dijkstra.path_queue"
+                },
+                {
+                    "source": "value9.output",
+                    "target": "dijkstra.shortest_path"
+                },
+                {
+                    "source": "value6.output",
+                    "target": "dijkstra.distance_queue"
+                },
+                {
+                    "source": ".start",
+                    "target": "start_point_on_mesh.positions"
+                },
+                {
+                    "source": ".end",
+                    "target": "end_point_on_mesh.positions"
+                },
+                {
+                    "source": "dijkstra.output_shortest_path",
+                    "target": ".shortest_path"
+                },
+                {
+                    "source": ".max_iterations",
+                    "target": "dijkstra.max_iterations"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "end_point_on_mesh.use_cutoff_distance",
+                    "valueType": "bool",
+                    "value": "true"
+                },
+                {
+                    "valueName": "end_point_on_mesh.cutoff_distance",
+                    "valueType": "float",
+                    "value": "10f"
+                },
+                {
+                    "valueName": "init_distances_with_numeric_max.start",
+                    "valueType": "float",
+                    "value": "10000f"
+                },
+                {
+                    "valueName": "init_path_queue.size",
+                    "valueType": "long",
+                    "value": "1"
+                },
+                {
+                    "valueName": "numeric_max.type",
+                    "valueType": "float",
+                    "value": "0f"
+                },
+                {
+                    "valueName": "start_point_on_mesh.use_cutoff_distance",
+                    "valueType": "bool",
+                    "value": "true"
+                },
+                {
+                    "valueName": "start_point_on_mesh.cutoff_distance",
+                    "valueType": "float",
+                    "value": "10f"
+                },
+                {
+                    "valueName": "update_point_neighbors.diagnostic_indices",
+                    "valueType": "array<uint>",
+                    "value": []
+                },
+                {
+                    "valueName": "update_point_neighbors.diagnostic_scale",
+                    "valueType": "float",
+                    "value": "0.00999999978f"
+                },
+                {
+                    "valueName": "value6.value",
+                    "valueType": "array<float>",
+                    "value": [
+                        "0f"
+                    ]
+                },
+                {
+                    "valueName": "value7.value",
+                    "valueType": "array<long>",
+                    "value": [
+                        "0"
+                    ]
+                },
+                {
+                    "valueName": "value9.value",
+                    "valueType": "array<long>",
+                    "value": []
+                },
+                {
+                    "valueName": "dijkstra.max_iterations",
+                    "valueType": "long",
+                    "value": "600"
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}
