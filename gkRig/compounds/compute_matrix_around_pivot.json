@@ -1,0 +1,452 @@
+{
+    "header": {
+        "metadata": [
+            {
+                "metaName": "adskFileFormatVersion",
+                "metaValue": "100L"
+            }
+        ]
+    },
+    "namespaces": [],
+    "types": [],
+    "compounds": [
+        {
+            "name": "gkRig::Motion::compute_matrix_around_pivot",
+            "uriImported": "stream:/bifrostGraphShape1",
+            "metadata": [
+                {
+                    "metaName": "documentation",
+                    "metaType": "string",
+                    "metaValue": "../docs/${language}/Core_Transform_compute_transform.md"
+                },
+                {
+                    "metaName": "icon",
+                    "metaType": "string",
+                    "metaValue": "../icons/generic_transform.svg"
+                },
+                {
+                    "metaName": "io_nodes",
+                    "metadata": [
+                        {
+                            "metaName": "io_inodes",
+                            "metadata": [
+                                {
+                                    "metaName": "input",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "-224.224 86.902"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "input_matrix"
+                                                },
+                                                {
+                                                    "metaName": "operator_matrix"
+                                                },
+                                                {
+                                                    "metaName": "pivot_matrix"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "37.000000"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "metaName": "io_onodes",
+                            "metadata": [
+                                {
+                                    "metaName": "output",
+                                    "metadata": [
+                                        {
+                                            "metaName": "DisplayMode",
+                                            "metaType": "string",
+                                            "metaValue": "2"
+                                        },
+                                        {
+                                            "metaName": "io_ports",
+                                            "metadata": [
+                                                {
+                                                    "metaName": "output_matrix"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "metaName": "zValue",
+                                            "metaType": "string",
+                                            "metaValue": "45.000000"
+                                        },
+                                        {
+                                            "metaName": "LayoutPos",
+                                            "metaType": "string",
+                                            "metaValue": "1122.93 38.9119"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "metaName": "NodeWidthOffset",
+                    "metaType": "string",
+                    "metaValue": "0"
+                },
+                {
+                    "metaName": "ViewportRect",
+                    "metaType": "string",
+                    "metaValue": "-192.844 -381.908 1443.7 1198.89"
+                },
+                {
+                    "metaName": "DisplayMode",
+                    "metaType": "string",
+                    "metaValue": "2"
+                },
+                {
+                    "metaName": "LayoutPos",
+                    "metaType": "string",
+                    "metaValue": "3980.09 1545.73"
+                },
+                {
+                    "metaName": "zValue",
+                    "metaType": "string",
+                    "metaValue": "91.000000"
+                }
+            ],
+            "ports": [
+                {
+                    "portName": "input_matrix",
+                    "portDirection": "input",
+                    "portType": "Math::double4x4",
+                    "portDefault": {
+                        "c0": {
+                            "x": "1",
+                            "y": "0",
+                            "z": "0",
+                            "w": "0"
+                        },
+                        "c1": {
+                            "x": "0",
+                            "y": "1",
+                            "z": "0",
+                            "w": "0"
+                        },
+                        "c2": {
+                            "x": "0",
+                            "y": "0",
+                            "z": "1",
+                            "w": "0"
+                        },
+                        "c3": {
+                            "x": "0",
+                            "y": "0",
+                            "z": "0",
+                            "w": "1"
+                        }
+                    },
+                    "metadata": [
+                        {
+                            "metaName": "quick_create",
+                            "metaType": "string",
+                            "metaValue": "Core::Math::SRT_to_matrix"
+                        }
+                    ]
+                },
+                {
+                    "portName": "operator_matrix",
+                    "portDirection": "input",
+                    "portType": "Math::double4x4",
+                    "portDefault": {
+                        "c0": {
+                            "x": "1",
+                            "y": "0",
+                            "z": "0",
+                            "w": "0"
+                        },
+                        "c1": {
+                            "x": "0",
+                            "y": "1",
+                            "z": "0",
+                            "w": "0"
+                        },
+                        "c2": {
+                            "x": "0",
+                            "y": "0",
+                            "z": "1",
+                            "w": "0"
+                        },
+                        "c3": {
+                            "x": "0",
+                            "y": "0",
+                            "z": "0",
+                            "w": "1"
+                        }
+                    },
+                    "metadata": [
+                        {
+                            "metaName": "quick_create",
+                            "metaType": "string",
+                            "metaValue": "Core::Math::SRT_to_matrix"
+                        }
+                    ]
+                },
+                {
+                    "portName": "output_matrix",
+                    "portDirection": "output"
+                },
+                {
+                    "portName": "pivot_matrix",
+                    "portDirection": "input",
+                    "portType": "Math::double4x4",
+                    "portDefault": {
+                        "c0": {
+                            "x": "0",
+                            "y": "0",
+                            "z": "0",
+                            "w": "0"
+                        },
+                        "c1": {
+                            "x": "0",
+                            "y": "0",
+                            "z": "0",
+                            "w": "0"
+                        },
+                        "c2": {
+                            "x": "0",
+                            "y": "0",
+                            "z": "0",
+                            "w": "0"
+                        },
+                        "c3": {
+                            "x": "0",
+                            "y": "0",
+                            "z": "0",
+                            "w": "0"
+                        }
+                    }
+                }
+            ],
+            "compoundNodes": [
+                {
+                    "nodeName": "inverse_matrix",
+                    "nodeType": "Core::Math::inverse_matrix",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "52.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "42.6193 277.734"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "operator_matrix_is_identity",
+                    "nodeType": "Core::Math::matrix_is_identity",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "39.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "69.0283 -2.73563"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "if",
+                    "nodeType": "Core::Logic::if",
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "44.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "870.25 39.5101"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "matrix_multiply",
+                    "nodeType": "Core::Math::matrix_multiply",
+                    "multiInPortNames": [
+                        "matrix1",
+                        "input_matrix"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "NodeWidthOffset",
+                            "metaType": "string",
+                            "metaValue": "33.0029"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "49.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "583.117 184.909"
+                        }
+                    ]
+                },
+                {
+                    "nodeName": "operator_matrix",
+                    "nodeType": "Core::Math::matrix_multiply",
+                    "multiInPortNames": [
+                        "pivot_matrix",
+                        "operator_matrix",
+                        "inverse_pivot_matrix"
+                    ],
+                    "metadata": [
+                        {
+                            "metaName": "DisplayMode",
+                            "metaType": "string",
+                            "metaValue": "2"
+                        },
+                        {
+                            "metaName": "zValue",
+                            "metaType": "string",
+                            "metaValue": "54.000000"
+                        },
+                        {
+                            "metaName": "LayoutPos",
+                            "metaType": "string",
+                            "metaValue": "309.188 205.4"
+                        }
+                    ]
+                }
+            ],
+            "connections": [
+                {
+                    "source": ".operator_matrix",
+                    "target": "operator_matrix_is_identity.matrix"
+                },
+                {
+                    "source": "matrix_multiply.matrix",
+                    "target": "if.false_case"
+                },
+                {
+                    "source": ".input_matrix",
+                    "target": "if.true_case"
+                },
+                {
+                    "source": "if.output",
+                    "target": ".output_matrix"
+                },
+                {
+                    "source": "operator_matrix_is_identity.is_identity",
+                    "target": "if.condition"
+                },
+                {
+                    "source": ".pivot_matrix",
+                    "target": "inverse_matrix.matrix"
+                },
+                {
+                    "source": "operator_matrix.matrix",
+                    "target": "matrix_multiply.first.matrix1"
+                },
+                {
+                    "source": ".input_matrix",
+                    "target": "matrix_multiply.first.input_matrix"
+                },
+                {
+                    "source": ".operator_matrix",
+                    "target": "operator_matrix.first.operator_matrix"
+                },
+                {
+                    "source": "inverse_matrix.inverted",
+                    "target": "operator_matrix.first.inverse_pivot_matrix"
+                },
+                {
+                    "source": ".pivot_matrix",
+                    "target": "operator_matrix.first.pivot_matrix"
+                }
+            ],
+            "values": [
+                {
+                    "valueName": "operator_matrix_is_identity.matrix",
+                    "valueType": "Math::float4x4",
+                    "value": {
+                        "c0": {
+                            "x": "1f",
+                            "y": "0f",
+                            "z": "0f",
+                            "w": "0f"
+                        },
+                        "c1": {
+                            "x": "0f",
+                            "y": "1f",
+                            "z": "0f",
+                            "w": "0f"
+                        },
+                        "c2": {
+                            "x": "0f",
+                            "y": "0f",
+                            "z": "1f",
+                            "w": "0f"
+                        },
+                        "c3": {
+                            "x": "0f",
+                            "y": "0f",
+                            "z": "0f",
+                            "w": "1f"
+                        }
+                    }
+                }
+            ],
+            "reservedNodeNames": [
+                {
+                    "name": "input"
+                },
+                {
+                    "name": "output"
+                }
+            ]
+        }
+    ]
+}
