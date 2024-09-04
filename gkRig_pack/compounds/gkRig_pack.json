@@ -55130,7 +55130,7 @@
                     ]
                 },
                 {
-                    "nodeName": "middle_segment_coefficients",
+                    "nodeName": "segment_coefficients",
                     "nodeType": "Core::Math::matrix_multiply",
                     "multiInPortNames": [
                         "output",
@@ -55176,7 +55176,7 @@
                     ]
                 },
                 {
-                    "nodeName": "middle_segments_position",
+                    "nodeName": "segments_position",
                     "nodeType": "Core::Math::matrix_multiply",
                     "multiInPortNames": [
                         "output",
@@ -55222,7 +55222,7 @@
                     ]
                 },
                 {
-                    "nodeName": "middle_segment_derivative_coefficients",
+                    "nodeName": "segment_derivative_coefficients",
                     "nodeType": "Core::Math::matrix_multiply",
                     "multiInPortNames": [
                         "output",
@@ -55247,7 +55247,7 @@
                     ]
                 },
                 {
-                    "nodeName": "middle_segment_derivative",
+                    "nodeName": "segment_derivative",
                     "nodeType": "Core::Math::matrix_multiply",
                     "multiInPortNames": [
                         "output",
@@ -56434,8 +56434,8 @@
             ],
             "connections": [
                 {
-                    "source": "middle_segment_coefficients.matrix",
-                    "target": "middle_segments_position.first.matrix1"
+                    "source": "segment_coefficients.matrix",
+                    "target": "segments_position.first.matrix1"
                 },
                 {
                     "source": "cv_count.size",
@@ -56446,15 +56446,15 @@
                     "target": "decrement2.value"
                 },
                 {
-                    "source": "middle_segments_position.matrix",
+                    "source": "segments_position.matrix",
                     "target": "add_root_extrapolation.first.output1"
                 },
                 {
-                    "source": "middle_segments_position.matrix",
+                    "source": "segments_position.matrix",
                     "target": "if_extrapolate_end.false_case"
                 },
                 {
-                    "source": "middle_segments_position.matrix",
+                    "source": "segments_position.matrix",
                     "target": "add_end_extrapolation.first.output1"
                 },
                 {
@@ -56462,11 +56462,11 @@
                     "target": "power.base"
                 },
                 {
-                    "source": "middle_segment_derivative_coefficients.matrix",
-                    "target": "middle_segment_derivative.first.matrix1"
+                    "source": "segment_derivative_coefficients.matrix",
+                    "target": "segment_derivative.first.matrix1"
                 },
                 {
-                    "source": "middle_segment_derivative.matrix",
+                    "source": "segment_derivative.matrix",
                     "target": "adjust_tangent.first.output1"
                 },
                 {
@@ -56715,11 +56715,11 @@
                 },
                 {
                     "source": "value14.output",
-                    "target": "middle_segments_position.first.output"
+                    "target": "segments_position.first.output"
                 },
                 {
                     "source": "value14.output",
-                    "target": "middle_segment_derivative.first.output"
+                    "target": "segment_derivative.first.output"
                 },
                 {
                     "source": "power.power",
@@ -56735,7 +56735,7 @@
                 },
                 {
                     "source": "value1.output",
-                    "target": "middle_segment_coefficients.first.output1"
+                    "target": "segment_coefficients.first.output1"
                 },
                 {
                     "source": "modulo.remainder",
@@ -56747,15 +56747,15 @@
                 },
                 {
                     "source": "value19.output",
-                    "target": "middle_segment_derivative_coefficients.first.output1"
+                    "target": "segment_derivative_coefficients.first.output1"
                 },
                 {
                     "source": "value3.output",
-                    "target": "middle_segment_coefficients.first.output"
+                    "target": "segment_coefficients.first.output"
                 },
                 {
                     "source": "value21.output",
-                    "target": "middle_segment_derivative_coefficients.first.output"
+                    "target": "segment_derivative_coefficients.first.output"
                 }
             ],
             "values": [
@@ -57336,7 +57336,7 @@
                     ]
                 },
                 {
-                    "nodeName": "middle_segment_coefficients",
+                    "nodeName": "segment_coefficients",
                     "nodeType": "Core::Math::matrix_multiply",
                     "multiInPortNames": [
                         "output",
@@ -57382,7 +57382,7 @@
                     ]
                 },
                 {
-                    "nodeName": "middle_segments_position",
+                    "nodeName": "segments_position",
                     "nodeType": "Core::Math::matrix_multiply",
                     "multiInPortNames": [
                         "output",
@@ -57428,7 +57428,7 @@
                     ]
                 },
                 {
-                    "nodeName": "middle_segment_derivative_coefficients",
+                    "nodeName": "segment_derivative_coefficients",
                     "nodeType": "Core::Math::matrix_multiply",
                     "multiInPortNames": [
                         "output",
@@ -57453,7 +57453,7 @@
                     ]
                 },
                 {
-                    "nodeName": "middle_segment_derivative",
+                    "nodeName": "segment_derivative",
                     "nodeType": "Core::Math::matrix_multiply",
                     "multiInPortNames": [
                         "output",
@@ -58639,8 +58639,8 @@
                     "target": "value1.value.x"
                 },
                 {
-                    "source": "middle_segment_coefficients.matrix",
-                    "target": "middle_segments_position.first.matrix1"
+                    "source": "segment_coefficients.matrix",
+                    "target": "segments_position.first.matrix1"
                 },
                 {
                     "source": "cv_count.size",
@@ -58651,15 +58651,15 @@
                     "target": "decrement2.value"
                 },
                 {
-                    "source": "middle_segments_position.matrix",
+                    "source": "segments_position.matrix",
                     "target": "add_root_extrapolation.first.output1"
                 },
                 {
-                    "source": "middle_segments_position.matrix",
+                    "source": "segments_position.matrix",
                     "target": "if_extrapolate_end.false_case"
                 },
                 {
-                    "source": "middle_segments_position.matrix",
+                    "source": "segments_position.matrix",
                     "target": "add_end_extrapolation.first.output1"
                 },
                 {
@@ -58675,28 +58675,28 @@
                     "target": "value1.value.y"
                 },
                 {
-                    "source": "middle_segment_derivative_coefficients.matrix",
-                    "target": "middle_segment_derivative.first.matrix1"
+                    "source": "segment_derivative_coefficients.matrix",
+                    "target": "segment_derivative.first.matrix1"
                 },
                 {
-                    "source": "middle_segment_derivative.matrix",
+                    "source": "segment_derivative.matrix",
                     "target": "adjust_tangent.first.output1"
                 },
                 {
                     "source": "value14.output",
-                    "target": "middle_segments_position.first.output"
+                    "target": "segments_position.first.output"
                 },
                 {
                     "source": "value14.output",
-                    "target": "middle_segment_derivative.first.output"
+                    "target": "segment_derivative.first.output"
                 },
                 {
                     "source": "value1.output",
-                    "target": "middle_segment_coefficients.first.output1"
+                    "target": "segment_coefficients.first.output1"
                 },
                 {
                     "source": "value19.output",
-                    "target": "middle_segment_derivative_coefficients.first.output1"
+                    "target": "segment_derivative_coefficients.first.output1"
                 },
                 {
                     "source": "value2.output",
@@ -58708,11 +58708,11 @@
                 },
                 {
                     "source": "value3.output",
-                    "target": "middle_segment_coefficients.first.output"
+                    "target": "segment_coefficients.first.output"
                 },
                 {
                     "source": "value21.output",
-                    "target": "middle_segment_derivative_coefficients.first.output"
+                    "target": "segment_derivative_coefficients.first.output"
                 },
                 {
                     "source": "is_less_than_0.output",
@@ -66027,7 +66027,7 @@
                             ]
                         },
                         {
-                            "nodeName": "middle_segment_derivative_coefficients",
+                            "nodeName": "segment_derivative_coefficients",
                             "nodeType": "Core::Math::matrix_multiply",
                             "multiInPortNames": [
                                 "output",
@@ -66052,7 +66052,7 @@
                             ]
                         },
                         {
-                            "nodeName": "middle_segment_derivative",
+                            "nodeName": "segment_derivative",
                             "nodeType": "Core::Math::matrix_multiply",
                             "multiInPortNames": [
                                 "output",
@@ -66837,20 +66837,20 @@
                             "target": "value19.value.x"
                         },
                         {
-                            "source": "middle_segment_derivative_coefficients.matrix",
-                            "target": "middle_segment_derivative.first.matrix1"
+                            "source": "segment_derivative_coefficients.matrix",
+                            "target": "segment_derivative.first.matrix1"
                         },
                         {
-                            "source": "middle_segment_derivative.matrix",
+                            "source": "segment_derivative.matrix",
                             "target": "length.vector"
                         },
                         {
                             "source": "value14.output",
-                            "target": "middle_segment_derivative.first.output"
+                            "target": "segment_derivative.first.output"
                         },
                         {
                             "source": "value19.output",
-                            "target": "middle_segment_derivative_coefficients.first.output1"
+                            "target": "segment_derivative_coefficients.first.output1"
                         },
                         {
                             "source": "value2.output",
@@ -66858,7 +66858,7 @@
                         },
                         {
                             "source": "value21.output",
-                            "target": "middle_segment_derivative_coefficients.first.output"
+                            "target": "segment_derivative_coefficients.first.output"
                         },
                         {
                             "source": "second_cv.value",
@@ -68754,7 +68754,7 @@
                             ]
                         },
                         {
-                            "nodeName": "middle_segment_derivative_coefficients",
+                            "nodeName": "segment_derivative_coefficients",
                             "nodeType": "Core::Math::matrix_multiply",
                             "multiInPortNames": [
                                 "output",
@@ -68779,7 +68779,7 @@
                             ]
                         },
                         {
-                            "nodeName": "middle_segment_derivative",
+                            "nodeName": "segment_derivative",
                             "nodeType": "Core::Math::matrix_multiply",
                             "multiInPortNames": [
                                 "output",
@@ -69564,20 +69564,20 @@
                             "target": "value19.value.x"
                         },
                         {
-                            "source": "middle_segment_derivative_coefficients.matrix",
-                            "target": "middle_segment_derivative.first.matrix1"
+                            "source": "segment_derivative_coefficients.matrix",
+                            "target": "segment_derivative.first.matrix1"
                         },
                         {
-                            "source": "middle_segment_derivative.matrix",
+                            "source": "segment_derivative.matrix",
                             "target": "length.vector"
                         },
                         {
                             "source": "value14.output",
-                            "target": "middle_segment_derivative.first.output"
+                            "target": "segment_derivative.first.output"
                         },
                         {
                             "source": "value19.output",
-                            "target": "middle_segment_derivative_coefficients.first.output1"
+                            "target": "segment_derivative_coefficients.first.output1"
                         },
                         {
                             "source": "value2.output",
@@ -69585,7 +69585,7 @@
                         },
                         {
                             "source": "value21.output",
-                            "target": "middle_segment_derivative_coefficients.first.output"
+                            "target": "segment_derivative_coefficients.first.output"
                         },
                         {
                             "source": "second_cv.value",
